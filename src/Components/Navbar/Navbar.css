@@ -1,0 +1,38 @@
+nav {
+    background-color: #303030;
+    height: 6.5rem;
+    padding-inline: 2rem !important;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 6.5rem;
+    gap: 2rem;
+}
+.navbar img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+   
+}
+.nav-top {
+    display: flex;
+    margin-right: 1rem;
+    gap: 2rem;
+
+}
+.nav-top li{
+ list-style-type: none;
+ color: #ccc;
+ font-family: 'IBM Plex Sans Arabic', sans-serif;
+ line-height: 2.2rem;
+ font-size: 1.6rem;
+ font-weight: 600;
+ cursor: pointer;
+}
+.nav-top li:hover {
+    color: #fff;
+    transition-duration: 1s;
+}
