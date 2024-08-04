@@ -1,35 +1,41 @@
 nav {
-    background-color: #303030;
-    height: 6rem;
-    padding-inline: 2rem !important;
+    background-color: #191919;
+    height: 7rem;
 }
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: space-between;
     height: 6rem;
     gap: 2rem;
 }
 .navbar img{
-    width: 4rem;
-    height: 4rem;
-    border-radius: 1rem;
+    width: 7rem;
+    height: auto;
+    border-radius: 0.5rem;
     cursor: pointer;
    
 }
-.nav-top {
-    display: flex;
-    margin-right: 1rem;
-    gap: 2rem;
+.nav-top input {
+    width: 50rem;
+    background-color: #383838;
+    color: #ccc;
+    height: 4.8rem;
+    border: none;
+    outline: none;
+    border-radius: 2.5rem;
 
+}
+.nav-top input::placeholder {
+    color: #fff;
 }
 .nav-top li{
  list-style-type: none;
  color: #ccc;
  font-family: 'IBM Plex Sans Arabic', sans-serif;
  line-height: 2.2rem;
- font-size: 1.6rem;
- font-weight: 600;
+ font-size: 2rem;
+ font-weight: bold;
  cursor: pointer;
 }
 .nav-top li:hover {

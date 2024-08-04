@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar.css'
-import imgLogo from '../../assets/images/2.png'
+import imgLogo from '../../assets/images/24.png'
 
 const Navbar = () => {
   return (
@@ -8,8 +8,7 @@ const Navbar = () => {
       <div className='container navbar'>
             <img src={imgLogo} alt="logo Image" />
         <div className="nav-top">
-            <li>الرئيسية</li>
-            <li>الأقسام</li>
+           <input type="text" placeholder='إبحث'/>
         </div>
       </div>
     </nav>
