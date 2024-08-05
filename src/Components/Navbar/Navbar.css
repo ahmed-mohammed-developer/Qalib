@@ -1,44 +1,95 @@
 nav {
-    background-color: #191919;
-    height: 7rem;
+    background-color: #fff;
+    height: 10rem;
+    border-bottom: 0.5px solid #2d2f31;
 }
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 6rem;
-    gap: 2rem;
+    height: 10rem;
 }
 .navbar img{
-    width: 7rem;
+    width: 10rem;
     height: auto;
     border-radius: 0.5rem;
     cursor: pointer;
    
 }
-.nav-top input {
-    width: 50rem;
-    background-color: #383838;
-    color: #ccc;
-    height: 4.8rem;
-    border: none;
-    outline: none;
+.nav-top form {
+    border: 1px solid #2d2f31;
     border-radius: 2.5rem;
+    width: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.8rem;
+}
+.nav-top form i {
+    font-size: 2.6rem;
+    line-height: 1.2;
+    color: #6cee69;
+    font-weight: 700;
+    margin-left: 1rem;
+}
+.nav-top input {
+    width: 40rem;
+    background-color: #ffffff53;
+    color: #2d2f31;
+    height: 3.8rem;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.nav-top input:focus {
+    outline: #6cee69 dashed 1px;
 
 }
 .nav-top input::placeholder {
-    color: #fff;
+    color: #2d2f31;
+    padding-right: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
 }
-.nav-top li{
- list-style-type: none;
- color: #ccc;
- font-family: 'IBM Plex Sans Arabic', sans-serif;
- line-height: 2.2rem;
- font-size: 2rem;
- font-weight: bold;
- cursor: pointer;
-}
-.nav-top li:hover {
-    color: #fff;
-    transition-duration: 1s;
-}
+@media (width < 785px) {
+  
+   .nav-top form {
+   width: 30rem;
+   }
+   .nav-top input {
+    width: 20rem;
+   }
+    }
+    @media (width < 590px) {
+        nav {
+            height: 8rem;
+        }
+        .navbar {
+            height: 8rem;
+        }
+        .nav-top form {
+        display: none;
+        }
+        .nav-top input {
+         display: none;
+        }
+         }
+    .pages {
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+    }
+    .pages ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    .pages ul li {
+        list-style-type: none;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 2.2rem;
+        cursor: pointer;
+        color: #2d2f31;
+    }
