@@ -13,10 +13,10 @@ const Navbar = () => {
     
     <nav>
       <div className='container navbar'>
-        <div>
+        <div className='disNon'>
         <i className="fa-solid fa-bars" onClick={handleNavbarOpen}></i>
       {open? (
-         <div className="mobil-nav">
+         <div className="mobil-nav disNon">
          <ul>
             <li>جميع القوالب</li>
             <li>صفحات الهبوط</li>
@@ -31,7 +31,7 @@ const Navbar = () => {
               <img src={imgLogo} alt="logo Image" />
               </div>
               <div>
-              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-solid fa-magnifying-glass disNon"></i>
               </div>
         <div className="nav-top">
           <form>

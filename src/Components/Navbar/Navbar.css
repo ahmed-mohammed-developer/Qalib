@@ -104,7 +104,7 @@ nav {
     .mobil-nav {
         position: absolute;
         top: 8.9rem;
-        background-color: #6cee69;
+        background-color: #2d2f31;
     }
     .mobil-nav ul {
         margin: 0  !important;
@@ -119,15 +119,15 @@ nav {
         cursor: pointer;
         color: #fff;
         margin-top: 1.5rem;
+        font-weight: 700;
     }
     .fa-solid {
-        font-size: 3rem;
+        font-size: 2rem;
         color: #2d2f31;
         cursor: pointer;
     }
     @media (width > 590px) {
-        .fa-solid,
-        .mobil-nav {
+        .disNon {
             display: none;
         }
     }
