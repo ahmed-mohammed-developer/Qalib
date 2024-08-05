@@ -35,7 +35,7 @@ const Navbar = () => {
               </div>
         <div className="nav-top">
           <form>
-          <i class='bx bx-search'></i>
+          <i class='fa-solid fa-magnifying-glass'></i>
           <input type="text" placeholder='إبحث'/>
           </form>
         </div>
