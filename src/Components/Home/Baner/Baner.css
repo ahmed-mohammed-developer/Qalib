@@ -10,7 +10,9 @@
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
-
+.row {
+    height: 50rem;
+}
 .description-baner h1 {
     font-size: 4rem;
     line-height: 5.6rem;
@@ -26,7 +28,6 @@
     line-height: 2.5rem;
     font-weight: bold;
     color: #2d2f31;
-    margin-bottom: 2rem !important;
     text-align: center;
 }
 
@@ -37,8 +38,44 @@
     display: block;
     margin: 0 auto;
 }
-@media (width < 576px) {
+@media (width > 995px) {
     .row {
-        height: 95vh;
+        height: 40rem;
     }
-     }
+}
+
+@media (width < 576px) {
+  .description-baner h1 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+
+  }
+  .description-baner p {
+        line-height: 3.5rem;
+    }
+  }
+
+  @media (width < 512px) {
+    .description-baner h1 {
+      font-size: 2.5rem;
+      line-height: 3.6rem;
+      margin-bottom: 2.5rem;
+
+    }
+   
+}
+@media (width < 512px) {
+    .row {
+        height: 42rem;
+    }
+    .description-baner h1 {
+      font-size: 2rem;
+      line-height: 3rem;
+      margin-bottom: 1rem;
+    }
+    .description-baner p {
+        line-height: 3rem;
+        font-size: 1.5rem;
+    }
+}
+

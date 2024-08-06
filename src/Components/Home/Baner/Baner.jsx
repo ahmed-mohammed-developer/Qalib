@@ -37,7 +37,9 @@ const Baner = () => {
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 autoplay: true,
-                initialSlide: 2
+                initialSlide: 2,
+                dots: true,
+                arrows: false, // إخفاء الأسهم
               }
             },
             {
@@ -45,7 +47,9 @@ const Baner = () => {
               settings: {
                 slidesToShow: 1,
                 autoplay: true,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                dots: true,
+                arrows: false, // إخفاء الأسهم
               }
             }
           ]
