@@ -7,10 +7,11 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 
+
 const Baner = () => {
     const data = BanerJson.posts;
     var settings = {
-        dots: false,
+        dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
@@ -20,6 +21,8 @@ const Baner = () => {
         slidesPerRow:1,
         autoplay: true, // تفعيل التمرير التلقائي
         autoplaySpeed: 8000, // المدة الزمنية بين كل انتقال (3000 مللي ثانية = 3 ثواني
+        rtl: true, // تفعيل التشغيل من اليمين إلى اليسار
+        arrows: false, // إخفاء الأسهم
         responsive: [
             {
               breakpoint: 1024,
