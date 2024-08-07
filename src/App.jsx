@@ -11,7 +11,7 @@ const App = () => {
       <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/Qalib" element={<Home />} />
+        <Route path="/Qalib/" element={<Home />} />
         <Route path="/Qalib/LandingPage" element={<LandingPage />} />
         <Route path="/Qalib/EShop" element={<EShop />} />
         <Route path="/Qalib/Details/:id" element={<Details />} />
