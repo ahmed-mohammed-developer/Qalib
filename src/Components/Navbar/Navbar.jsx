@@ -45,7 +45,7 @@ const Navbar = () => {
     <div className="pages">
       <div className="container">
       <ul>
-      <li><Link to="/Qalib/">جميع القوالب</Link></li>
+      <li><Link to="/Qalib/">الرئسية</Link></li>
       <li><Link to="/Qalib/LandingPage">صفحات الهبوط</Link></li>
         <li> موقع للشركات</li>
         <li>موقع شخصي</li>
