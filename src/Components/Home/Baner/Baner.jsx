@@ -1,6 +1,6 @@
 import React from 'react'
 import './Baner.css'
-import BanerJson from '../../../../public/Json/BanerJson.json'
+import BanerJson from '../../Json/BanerJson.json'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

@@ -1,6 +1,6 @@
 import React from 'react';
-import BanerJson from '../../../../public/Json/BanerJson.json';
-import { Link, useLocation } from 'react-router-dom';
+import BanerJson from '../../Json/BanerJson.json';
+import { Link } from 'react-router-dom';
 
 const Main = () => {
   const data = BanerJson.posts;
