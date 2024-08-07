@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './Navbar.css'
 import imgLogo from '../../assets/images/5.png'
 
@@ -19,7 +20,7 @@ const Navbar = () => {
          <div className="mobil-nav disNon">
          <ul>
             <li>جميع القوالب</li>
-            <li>صفحات الهبوط</li>
+            <li><Link to="/Qalib/LandingPage">صفحات الهبوط</Link></li>
             <li> موقع للشركات</li>
             <li>موقع شخصي</li>
             <li>أخرى</li>
@@ -44,8 +45,8 @@ const Navbar = () => {
     <div className="pages">
       <div className="container">
       <ul>
-        <li>جميع القوالب</li>
-        <li>صفحات الهبوط</li>
+      <li><Link to="/Qalib">جميع القوالب</Link></li>
+      <li><Link to="/Qalib/LandingPage">صفحات الهبوط</Link></li>
         <li> موقع للشركات</li>
         <li>موقع شخصي</li>
         <li>أخرى</li>
