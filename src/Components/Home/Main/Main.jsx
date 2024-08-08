@@ -1,6 +1,6 @@
 import React from 'react';
 import './Main.css'
-import AllJson from '../../Json/AllJson.json'
+import AllJson from '../../Details/AllJson.json'
 import { Link } from 'react-router-dom';
 
 
