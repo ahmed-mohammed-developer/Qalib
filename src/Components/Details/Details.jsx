@@ -6,7 +6,7 @@ const Details = () => {
   const [data, setData] = useState(null); // تغيير الحالة لتكون كائنًا واحدًا بدلاً من مصفوفة
   const { id } = useParams(); // استخراج id من params
   const baseApi = axios.create({
-    baseURL: `${process.env.PUBLIC_URL}/AllJson.json`
+    baseURL: '/Qalib/AllJson.json'
   });
 //  baseURL: `${process.env.PUBLIC_URL}/AllJson.json`
 //'/Qalib/src/Components/Details/AllJson.json'
