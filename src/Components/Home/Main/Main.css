@@ -1,5 +1,12 @@
 .card {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    position: relative
+}
+.card img {
+    transition: filter 0.3s ease; /* إضافة تأثير الانتقال */
+}
+.card img:hover{
+    filter: brightness(80%); /* تعتيم الصورة */
 }
 .card-title {
     font-size: 2rem;
@@ -12,3 +19,19 @@
     font-weight: bold;
     line-height: 2rem;
 }
+.fa-bookmark.saved {
+    color: orange; /* اللون الذي تريده عند حفظ العنصر */
+  }
+  
+.message {
+    position: absolute;
+    top: -20px;
+    right: 10px;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    z-index: 1000; /* تأكد من أن الرسالة تظهر فوق العناصر الأخرى */
+  }
+  
