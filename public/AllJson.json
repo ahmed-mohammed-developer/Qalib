@@ -1,6 +1,14 @@
 {
     "posts": [
-      { "id": 1, "title": "التنقل مع المحتوى", "content": "مكون لتغير محتوى النص بالضغط على النقطة الرئسية تم تصميمه ب HTML & CSS" , "img": "https://i.postimg.cc/gjNW71jP/image.png"}
+      { "id": 1,
+       "title": "التنقل مع المحتوى", 
+       "content": "مكون لتغير محتوى النص بالضغط على النقطة الرئسية تم تصميمه ب HTML & CSS" , 
+       "img": "https://i.postimg.cc/gjNW71jP/image.png",
+       "view": "https://ahmed-mohammed-developer.github.io/component_PureCSSTabsWithIndicator_public/",
+       "don": "https://github.com/ahmed-mohammed-developer/component_PureCSSTabsWithIndicator_public",
+       "Designer": "Ahmed mohammed",
+       "DesignerUrl": ""
+      }
     ]
   }
 

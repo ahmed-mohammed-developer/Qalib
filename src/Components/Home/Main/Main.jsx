@@ -68,7 +68,7 @@ const Main = () => {
     }
     setSavedItems(updatedSavedItems);
     localStorage.setItem('savedItems', JSON.stringify(updatedSavedItems));
-    setTimeout(() => setMessage(''), 2000); // إخفاء الرسالة بعد 2 ثانية
+    setTimeout(() => setMessage(''), 4000); // إخفاء الرسالة بعد 2 ثانية
   };
 
   const isItemSaved = (item) => {
@@ -86,20 +86,27 @@ const Main = () => {
                   <Link to={`/Qalib/Details/${item.id}`}>
                     <img src={`${item.img}?${index}`} className="card-img-top" alt="" />
                   </Link>
-                  <Link to={`/Qalib/Details/${item.id}`}>
+                  <Link to={`/Qalib/Details/${item.id}`} className="custom-link">
                     <div className="card-body">
                       <h5 className="card-title">{item.title}</h5>
                       <p className="card-text">{item.content}</p>
                     </div>
                   </Link>
+                  <div className="iconCard">
+                  <Link to={item.view} target="_blank" className="custom-link">
                   <i className="fa-regular fa-eye"></i>
+                  </Link>
+                  <Link to={item.don} target="_blank" className="custom-link">
                   <i className="fa-solid fa-file-arrow-down"></i>
-                  <i 
-                    className={`fa-regular fa-bookmark ${isItemSaved(item) ? 'saved' : ''}`} 
+                  </Link>
+                  <i className={`fa-solid fa-heart ${isItemSaved(item) ? 'saved' : ''}`} 
                     onClick={() => saveToLocalStorage(item)}
-                    style={{ color: isItemSaved(item) ? 'orange' : 'inherit' }}
+                    style={{ color: isItemSaved(item) ? '#6cee69' : 'inherit' }}
                   ></i>
                   {message && <div className="message">{message}</div>}
+                  </div>
+                
+                
                 </div>
               </div>
             </div>

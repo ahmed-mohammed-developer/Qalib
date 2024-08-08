@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './Details.css'
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
@@ -8,8 +9,7 @@ const Details = () => {
   const baseApi = axios.create({
     baseURL: '/Qalib/AllJson.json'
   });
-//  baseURL: `${process.env.PUBLIC_URL}/AllJson.json`
-//'/Qalib/src/Components/Details/AllJson.json'
+
 
   const fetchDetails = async () => {
     try {
@@ -32,16 +32,37 @@ const Details = () => {
   }, [id]);
 
   return (
-    <div>
-      {data ? (
-        <div>
-          <h2>{data.title}</h2>
-          <p>{data.content}</p>
-        </div>
-      ) : (
-        <p>لم يتم العثور على البيانات</p>
-      )}
+    <div className="details">
+    <div className="container">
+      <div className="row">
+        {data ? (
+          <>
+          <div className="col-lg-8 col-md-8 col-sm-12">
+              <img src={data.img} alt={data.title} />
+          </div>
+          <div className="col-lg-4 col-md-4 col-sm-12">
+            <div className="title-qalib">
+              <h2>{data.title}</h2>
+            </div>
+            <div className="text-det">
+              <h2>وفر الوقت والجهد مع قوالب الويب.</h2>
+            </div>
+                  <i className="fa-regular fa-eye"></i>
+                  <i className="fa-solid fa-file-arrow-down"></i>
+          </div>
+            <div>
+              <h2>{data.title}</h2>
+              <p>{data.content}</p>
+            </div>
+          </>
+        ) : (
+          <p>لم يتم العثور على البيانات</p>
+        )}
+
+      </div>
     </div>
+  </div>
+  
   );
 };
 
