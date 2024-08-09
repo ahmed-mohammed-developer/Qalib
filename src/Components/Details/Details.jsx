@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './Details.css'
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
+
 
 const Details = () => {
   const [data, setData] = useState(null); // تغيير الحالة لتكون كائنًا واحدًا بدلاً من مصفوفة
@@ -37,22 +39,46 @@ const Details = () => {
       <div className="row">
         {data ? (
           <>
-          <div className="col-lg-8 col-md-8 col-sm-12">
+          <div className="col-lg-8 col-md-12 col-sm-12">
               <img src={data.img} alt={data.title} />
           </div>
-          <div className="col-lg-4 col-md-4 col-sm-12">
+          <div className="col-lg-4 col-md-12 col-sm-12">
             <div className="title-qalib">
               <h2>{data.title}</h2>
+              <Link to={data.ByUrl} target="_blank" className="custom-link"><p><span>تصميم : </span>{data.By}</p></Link>
             </div>
             <div className="text-det">
               <h2>وفر الوقت والجهد مع قوالب الويب.</h2>
+            <div className="text-point">
+            <i class="fa-regular fa-circle-check"></i>
+            <p>ابدأ مشروعك الرقمي الآن😍</p>
             </div>
-                  <i className="fa-regular fa-eye"></i>
-                  <i className="fa-solid fa-file-arrow-down"></i>
+            <div className="text-point">
+            <i class="fa-regular fa-circle-check"></i>
+            <p>حوّل رؤيتك إلى واقع 😍</p>
+            </div>
+            <div className="text-point">
+            <i class="fa-regular fa-circle-check"></i>
+            <p>اجعل موقعك يتألق 😍</p>
+            </div>
+            </div>
+            <Link to={data.don} target="_blank" className="custom-link">
+            <div className='text-icon'>
+            <i className="fa-regular fa-eye"></i>
+            <p>لمشاهدة القالب</p>
+            </div>
+            </Link>
+            <Link to={data.don} target="_blank" className="custom-link">
+            <div className="text-icon">
+            <i className="fa-solid fa-file-arrow-down"></i>
+            <p>لتحميل القالب</p>
+            </div>
+            </Link>
           </div>
-            <div>
+            <div className='description'>
+              <h3>تفاصيل القالب :</h3>
               <h2>{data.title}</h2>
-              <p>{data.content}</p>
+              <p>{data.description}</p>
             </div>
           </>
         ) : (

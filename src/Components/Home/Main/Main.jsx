@@ -89,7 +89,7 @@ const Main = () => {
                   <Link to={`/Qalib/Details/${item.id}`} className="custom-link">
                     <div className="card-body">
                       <h5 className="card-title">{item.title}</h5>
-                      <p className="card-text">{item.content}</p>
+                      <p className="card-text">{item.description}</p>
                     </div>
                   </Link>
                   <div className="iconCard">
