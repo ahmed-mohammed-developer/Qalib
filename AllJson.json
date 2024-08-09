@@ -1,13 +1,14 @@
 {
     "posts": [
       { "id": 1,
-       "title": "التنقل مع المحتوى", 
+       "title": "تبويبات المحتوى", 
        "content": "مكون لتغير محتوى النص بالضغط على النقطة الرئسية تم تصميمه ب HTML & CSS" , 
        "img": "https://i.postimg.cc/gjNW71jP/image.png",
        "view": "https://ahmed-mohammed-developer.github.io/component_PureCSSTabsWithIndicator_public/",
        "don": "https://github.com/ahmed-mohammed-developer/component_PureCSSTabsWithIndicator_public",
-       "Designer": "Ahmed mohammed",
-       "DesignerUrl": ""
+       "By": "أحمد محمد",
+       "ByUrl": "",
+       "description": "تبويبات المحتوى هي تقنية تستخدم لإنشاء تبويبات (Tabs) في صفحات الويب باستخدام HTML و CSS فقط، دون الحاجة إلى JavaScript. هذه التبويبات تتيح للمستخدمين التنقل بين محتويات مختلفة داخل نفس الصفحة بطريقة سلسة وجذابة."
       }
     ]
   }
