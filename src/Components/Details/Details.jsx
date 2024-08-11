@@ -3,6 +3,7 @@ import './Details.css'
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import AllJson from '../../../public/AllJson.json'
 
 
 const Details = () => {
@@ -11,7 +12,8 @@ const Details = () => {
   const baseApi = axios.create({
     baseURL: '/Qalib/AllJson.json'
   });
-
+ const tech = AllJson.posts[0].tech;
+ console.log(tech)
 
   const fetchDetails = async () => {
     try {
@@ -75,11 +77,18 @@ const Details = () => {
             </div>
             </Link>
           </div>
+           <div className="row">
+            <div className="col-lg-8 col-md-12 col-sm-12">
             <div className='description'>
               <h3>تفاصيل القالب :</h3>
-              <h2>{data.title}</h2>
               <p>{data.description}</p>
+              <h3 className='hdes'>التقنيات المستخدمة :</h3>
+              {tech.map((item, index) => (
+            <p key={index} className="tech">{item}</p>
+          ))}
+                  </div>
             </div>
+           </div>
           </>
         ) : (
           <p>لم يتم العثور على البيانات</p>
