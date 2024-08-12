@@ -75,6 +75,9 @@
     text-decoration: none; /* لإزالة الخط السفلي */
     color: inherit; /* للحفاظ على لون النص الافتراضي */
 }
+.marginBoutton {
+    margin-bottom: 4rem;
+}
 @media (width < 298px) {
     .card-title {
         font-size: 1.6rem;

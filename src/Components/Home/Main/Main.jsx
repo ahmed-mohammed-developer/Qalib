@@ -77,11 +77,11 @@ const Main = () => {
 
   return (
     <>
-      {data.map((item, index) => (
-        <div className='main' key={index}>
+        <div className='main'>
           <div className="container">
             <div className="row">
-              <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+            {data.map((item, index) => (
+              <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 marginBoutton" key={index}>
                 <div className="card" style={{ position: 'relative' }}>
                   <Link to={`/Qalib/Details/${item.id}`}>
                     <img src={`${item.img}?${index}`} className="card-img-top" alt="" />
@@ -96,7 +96,7 @@ const Main = () => {
                   <Link to={item.view} target="_blank" className="custom-link">
                   <i className="fa-regular fa-eye"></i>
                   </Link>
-                  <Link to={item.don} target="_blank" className="custom-link">
+                  <Link to={item.download} target="_blank" className="custom-link">
                   <i className="fa-solid fa-file-arrow-down"></i>
                   </Link>
                   <i className={`fa-solid fa-heart ${isItemSaved(item) ? 'saved' : ''}`} 
@@ -109,10 +109,10 @@ const Main = () => {
                 
                 </div>
               </div>
+            ))}
             </div>
           </div>
         </div>
-      ))}
     </>
   );
 };

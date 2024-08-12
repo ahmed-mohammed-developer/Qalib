@@ -12,8 +12,8 @@ const Details = () => {
   const baseApi = axios.create({
     baseURL: '/Qalib/AllJson.json'
   });
- const tech = AllJson.posts[0].tech;
- console.log(tech)
+ const tech = AllJson.posts[1].tech;
+
 
   const fetchDetails = async () => {
     try {
@@ -64,13 +64,13 @@ const Details = () => {
             <p>اجعل موقعك يتألق 😍</p>
             </div>
             </div>
-            <Link to={data.don} target="_blank" className="custom-link">
+            <Link to={data.view} target="_blank" className="custom-link">
             <div className='text-icon'>
             <i className="fa-regular fa-eye"></i>
             <p>لمشاهدة القالب</p>
             </div>
             </Link>
-            <Link to={data.don} target="_blank" className="custom-link">
+            <Link to={data.download} target="_blank" className="custom-link">
             <div className="text-icon">
             <i className="fa-solid fa-file-arrow-down"></i>
             <p>لتحميل القالب</p>
