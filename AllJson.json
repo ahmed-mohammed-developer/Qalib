@@ -5,12 +5,24 @@
        "content": "مكون لتغير محتوى النص بالضغط على النقطة الرئسية تم تصميمه ب HTML & CSS" , 
        "img": "https://i.postimg.cc/gjNW71jP/image.png",
        "view": "https://ahmed-mohammed-developer.github.io/component_PureCSSTabsWithIndicator_public/",
-       "don": "https://github.com/ahmed-mohammed-developer/component_PureCSSTabsWithIndicator_public",
+       "download": "https://github.com/ahmed-mohammed-developer/component_PureCSSTabsWithIndicator_public",
        "By": "أحمد محمد",
        "ByUrl": "",
        "description": "تبويبات المحتوى هي تقنية تستخدم لإنشاء تبويبات (Tabs) في صفحات الويب باستخدام HTML و CSS فقط، دون الحاجة إلى JavaScript. هذه التبويبات تتيح للمستخدمين التنقل بين محتويات مختلفة داخل نفس الصفحة بطريقة سلسة وجذابة.",
-       "tech": ["Html", "CSS"]
-      }
+       "tech": ["Html", "CSS"],
+       "type": "component"
+      },
+      { "id": 2,
+      "title": "شريط التنقل المتجاوب", 
+      "description": "شريط التنقل المتجاوب : تم تصميمه بإستخدام Html & Css & JavaScript وهو متجاوب مع جميع أحجام الشاشات , كذلك يمكنك تخصيصه بسهوله ." , 
+      "img": "https://i.postimg.cc/L8PnT4wY/NavBar.png",
+      "view": "https://ahmed-mohammed-developer.github.io/component_navbar_public/",
+      "download": "https://github.com/ahmed-mohammed-developer/component_navbar_public",
+      "By": "أحمد محمد",
+      "ByUrl": "",
+      "tech": ["Html", "CSS", "Java Script", "ٌResponsive"],
+      "type": "component"
+     }
     ]
   }
 
