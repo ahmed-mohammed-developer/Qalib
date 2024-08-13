@@ -5,7 +5,9 @@
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border-radius: 0.5rem !important;
     margin-bottom: 2rem;
-
+}
+.card-body {
+    padding-top: 0 !important;
 }
 .card img {
     transition: filter 0.3s ease; /* إضافة تأثير الانتقال */
@@ -17,11 +19,10 @@
     filter: brightness(80%); /* تعتيم الصورة */
 }
 .card-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 500;
     line-height: 4rem;
     font-family: "FFShamelFamily-SansOneBold", sans-serif;
-    padding: 1rem;
     margin-bottom: 0 !important;
 
 }
@@ -30,7 +31,6 @@
     font-weight: 400;
     line-height: 3rem;
     margin-bottom: 0 !important;
-    padding: 0 1rem 1rem 1rem;
     display: block;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -78,7 +78,7 @@
 .marginBoutton {
     margin-bottom: 1rem;
 }
-@media (width < 298px) {
+@media (width < 400px) {
     .card-title {
         font-size: 1.6rem;
         padding-top: 0 !important;
