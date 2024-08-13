@@ -6,23 +6,24 @@ import { Link } from 'react-router-dom';
 import AllJson from '../../../public/AllJson.json'
 
 
+
+
 const Details = () => {
-  const [data, setData] = useState(null); // تغيير الحالة لتكون كائنًا واحدًا بدلاً من مصفوفة
-  const { id } = useParams(); // استخراج id من params
+  const [data, setData] = useState(null);
+  const [tech, setTech] = useState([]); // حالة جديدة لتخزين tech
+  const { id } = useParams();
   const baseApi = axios.create({
     baseURL: '/Qalib/AllJson.json'
   });
- const tech = AllJson.posts[1].tech;
-
 
   const fetchDetails = async () => {
     try {
       const response = await baseApi.get('');
-      console.log("البيانات المستجابة:", response.data.posts); // طباعة البيانات المستجابة
-      // العثور على العنصر الذي يتطابق مع id
+      console.log("البيانات المستجابة:", response.data.posts);
       const item = response.data.posts.find(post => post.id === parseInt(id));
       if (item) {
-        setData(item); // تحديث الحالة بالعنصر المستخرج
+        setData(item);
+        setTech(item.tech); // تحديث حالة tech
       } else {
         console.log("لم يتم العثور على العنصر:", id);
       }
@@ -34,7 +35,6 @@ const Details = () => {
   useEffect(() => {
     fetchDetails();
   }, [id]);
-
   return (
     <div className="details">
     <div className="container">

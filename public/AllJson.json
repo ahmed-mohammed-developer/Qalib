@@ -20,9 +20,65 @@
       "download": "https://github.com/ahmed-mohammed-developer/component_navbar_public",
       "By": "أحمد محمد",
       "ByUrl": "",
-      "tech": ["Html", "CSS", "Java Script", "ٌResponsive"],
+      "tech": ["Html", "CSS", "JavaScript", "ٌResponsive"],
       "type": "component"
-     }
+     },
+     { "id": 3,
+     "title": "توليد رقم عشوائي", 
+     "description": "مكون لتوليد رقم عشوائي في كل مرة يتم فيها الضغط على الزر المخصص لذلك , ويمكن إستخدامه في المشاريع الواقعية أو للتدرب على إستخدام جافاسكربت بفعاليه أكثر ." , 
+     "img": "https://i.postimg.cc/FRrNdWpP/image.png",
+     "view": "https://ahmed-mohammed-developer.github.io/GenerateRandomSerialNumber_js_public/",
+     "download": "https://github.com/ahmed-mohammed-developer/GenerateRandomSerialNumber_js_public",
+     "By": "أحمد محمد",
+     "ByUrl": "",
+     "tech": ["Html", "CSS", "JavaScript", "ٌResponsive"],
+     "type": "component"
+    },
+    { "id": 4,
+    "title": "توسيع العرض عند التمرير", 
+    "description": "تأثير توسيع العرض عند التمرير باستخدام HTML و CSS و JavaScript! يضيف لمسة ديناميكية وجذابة تجعل تجربة المستخدم أكثر تفاعلية وإثارة , ويستخدم بشكل كبير في المواقع الشخصية لإبراز المهارات التي يتقنها الشخص .", 
+    "img": "https://i.postimg.cc/BZ2R9cCb/image.png",
+    "view": "https://ahmed-mohammed-developer.github.io/AnimateWidthOnScrolling_js_public/",
+    "download": "https://github.com/ahmed-mohammed-developer/AnimateWidthOnScrolling_js_public",
+    "By": "أحمد محمد",
+    "ByUrl": "",
+    "tech": ["Html", "CSS", "JavaScript", "ٌResponsive"],
+    "type": "component"
+   },
+   { "id": 5,
+   "title": "تغير الأرقام عند التمرير", 
+   "description": "تغير الأرقام عند التمرير تستخدم في مواقع الشركات بشكل كبير لإبراز عدد العملاء أو عدد الخدمات وما إلى ذلك , وهي تضيف جمال وجاذبية للموقع ولتجربة المستخدم", 
+   "img": "https://i.postimg.cc/qBmy7Ww5/image.png",
+   "view": "https://ahmed-mohammed-developer.github.io/count_js_public/",
+   "download": "https://github.com/ahmed-mohammed-developer/count_js_public",
+   "By": "أحمد محمد",
+   "ByUrl": "",
+   "tech": ["Html", "CSS", "JavaScript", "ٌResponsive"],
+   "type": "component"
+  },
+  { "id": 6,
+  "title": "توليد لون عشوائي", 
+  "description": "توليد رقم عشوائي في كل مرة يتم تحديث الصفحة مع إظهار الرقم الخاص باللون , ويمكن إستخدام هذا المكةن في كثير من المشاريع والأفكار .", 
+  "img": "https://i.postimg.cc/FH0Y06bm/image.png",
+  "view": "https://ahmed-mohammed-developer.github.io/RandomBackgroundColor_js_public/",
+  "download": "https://github.com/ahmed-mohammed-developer/RandomBackgroundColor_js_public",
+  "By": "أحمد محمد",
+  "ByUrl": "",
+  "tech": ["Html", "JavaScript"],
+  "type": "component"
+ },
+ { "id": 7,
+  "title": "عدد أحرف الإدخال وحدود التعبئة", 
+  "description": "توليد رقم عشوائي في كل مرة يتم تحديث الصفحة مع إظهار الرقم الخاص باللون , ويمكن إستخدام هذا المكةن في كثير من المشاريع والأفكار .", 
+  "img": "https://i.postimg.cc/QxPv58h9/image.png",
+  "view": "https://ahmed-mohammed-developer.github.io/RandomBackgroundColor_js_public/",
+  "download": "https://github.com/ahmed-mohammed-developer/RandomBackgroundColor_js_public",
+  "By": "أحمد محمد",
+  "ByUrl": "",
+  "tech": ["Html", "JavaScript"],
+  "type": "component"
+ }
     ]
   }
+
 
