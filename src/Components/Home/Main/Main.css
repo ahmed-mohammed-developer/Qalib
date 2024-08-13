@@ -37,7 +37,7 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-height: 4.2em; /* ارتفاع السطرين */
+    /*max-height: 4.2em; /* ارتفاع السطرين */
     line-height: 1.9em; /* ارتفاع السطر الواحد */
 
 }
@@ -77,6 +77,7 @@
 }
 .marginBoutton {
     margin-bottom: 1rem;
+    padding: 0 !important;
 }
 @media (width < 400px) {
     .card-title {
