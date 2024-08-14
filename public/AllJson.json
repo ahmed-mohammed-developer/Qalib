@@ -10,7 +10,8 @@
        "ByUrl": "",
        "description": "تبويبات المحتوى هي تقنية تستخدم لإنشاء تبويبات (Tabs) في صفحات الويب باستخدام HTML و CSS فقط، دون الحاجة إلى JavaScript. هذه التبويبات تتيح للمستخدمين التنقل بين محتويات مختلفة داخل نفس الصفحة بطريقة سلسة وجذابة.",
        "tech": ["Html", "CSS"],
-       "type": "component"
+       "type": "component",
+       "date": "2022-08-14T09:00:00Z"
       },
       { "id": 2,
       "title": "شريط التنقل المتجاوب", 
@@ -22,7 +23,7 @@
       "ByUrl": "",
       "tech": ["Html", "CSS", "JavaScript", "Responsive"],
       "type": "component",
-      "price": " مجاناَ "
+      "date": "2024-08-13T09:00:00Z"
      },
      { "id": 3,
      "title": "توليد رقم عشوائي", 
@@ -33,7 +34,8 @@
      "By": "أحمد محمد",
      "ByUrl": "",
      "tech": ["Html", "CSS", "JavaScript", "Responsive"],
-     "type": "component"
+     "type": "component",
+     "date": "2023-08-14T09:00:00Z"
     },
     { "id": 4,
     "title": "توسيع العرض عند التمرير", 
@@ -44,7 +46,8 @@
     "By": "أحمد محمد",
     "ByUrl": "",
     "tech": ["Html", "CSS", "JavaScript", "Responsive"],
-    "type": "component"
+    "type": "component",
+    "date": "2023-08-14T09:00:00Z"
    },
    { "id": 5,
    "title": "تغير الأرقام عند التمرير", 
@@ -55,7 +58,8 @@
    "By": "أحمد محمد",
    "ByUrl": "",
    "tech": ["Html", "CSS", "JavaScript", "Responsive"],
-   "type": "component"
+   "type": "component",
+   "date": "2023-08-14T09:00:00Z"
   },
   { "id": 6,
   "title": "توليد لون عشوائي", 
@@ -66,7 +70,8 @@
   "By": "أحمد محمد",
   "ByUrl": "",
   "tech": ["Html", "JavaScript"],
-  "type": "component"
+  "type": "component",
+  "date": "2023-08-14T09:00:00Z"
  },
  { "id": 7,
   "title": "عدد أحرف الإدخال", 
@@ -77,7 +82,8 @@
   "By": "أحمد محمد",
   "ByUrl": "",
   "tech": ["Html","CSS", "JavaScript"],
-  "type": "component"
+  "type": "component",
+  "date": "2023-08-14T09:00:00Z"
  },
  { "id": 8,
   "title": "صفحة هبوط شخصية", 
@@ -88,7 +94,8 @@
   "By": "أحمد محمد",
   "ByUrl": "",
   "tech": ["Html","CSS", "JavaScript", "Responsive"],
-  "type": "component"
+  "type": "component",
+  "date": "2024-08-14T09:00:00Z"
  },
  { "id": 9,
   "title": "تطبيق محول العملات", 
@@ -99,7 +106,8 @@
   "By": "أحمد محمد",
   "ByUrl": "",
   "tech": ["Html","CSS", "JavaScript", "Responsive", "ExchangeRate-API"],
-  "type": "component"
+  "type": "component",
+  "date": "2024-08-11T09:00:00Z"
  },
  { "id": 10,
   "title": "تطبيق مدير الأحداث", 
@@ -110,7 +118,8 @@
   "By": "أحمد محمد",
   "ByUrl": "",
   "tech": ["Html","CSS", "JavaScript", "Responsive"],
-  "type": "component"
+  "type": "component",
+  "date": "2024-08-12T09:00:00Z"
  }
     ]
   }

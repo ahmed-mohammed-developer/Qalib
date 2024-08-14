@@ -93,37 +93,39 @@ const Main = () => {
     <>
         <div className='main'>
           <div className="container">
-            <div className="row">
-            {data.map((item, index) => (
-              <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 marginBoutton" key={index}>
-                <div className="card" style={{ position: 'relative' }}>
-                  <Link to={`/Qalib/Details/${item.id}`}>
-                    <img src={`${item.img}?${index}`} className="card-img-top" alt="" />
-                  </Link>
-                  <Link to={`/Qalib/Details/${item.id}`} className="custom-link">
-                    <div className="card-body">
-                      <h5 className="card-title">{item.title}</h5>
-                      <p className="card-text">{item.description}</p>
-                    </div>
-                  </Link>
-                  <div className="iconCard">
-  <Link to={item.view} target="_blank" className="custom-link">
-    <i className="fa-regular fa-eye"></i>
-  </Link>
-  <Link to={item.download} target="_blank" className="custom-link">
-    <i className="fa-solid fa-file-arrow-down"></i>
-  </Link>
-  <i className={`fa-solid fa-heart ${isItemSaved(item) ? 'saved' : ''}`} 
-    onClick={() => saveToLocalStorage(item)}
-    style={{ color: isItemSaved(item) ? '#6cee69' : 'inherit' }}
-  ></i>
-  {messages[item.id] && <div className="message">{messages[item.id]}</div>}
+          <div className="row">
+  {data
+    .sort((a, b) => new Date(b.date) - new Date(a.date)) // ترتيب العناصر بترتيب تنازلي
+    .map((item, index) => (
+      <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 marginBoutton" key={index}>
+        <div className="card" style={{ position: 'relative' }}>
+          <Link to={`/Qalib/Details/${item.id}`}>
+            <img src={`${item.img}?${index}`} className="card-img-top" alt="" />
+          </Link>
+          <Link to={`/Qalib/Details/${item.id}`} className="custom-link">
+            <div className="card-body">
+              <h5 className="card-title">{item.title}</h5>
+              <p className="card-text">{item.description}</p>
+            </div>
+          </Link>
+          <div className="iconCard">
+            <Link to={item.view} target="_blank" className="custom-link">
+              <i className="fa-regular fa-eye"></i>
+            </Link>
+            <Link to={item.download} target="_blank" className="custom-link">
+              <i className="fa-solid fa-file-arrow-down"></i>
+            </Link>
+            <i className={`fa-solid fa-heart ${isItemSaved(item) ? 'saved' : ''}`} 
+              onClick={() => saveToLocalStorage(item)}
+              style={{ color: isItemSaved(item) ? '#6cee69' : 'inherit' }}
+            ></i>
+            {messages[item.id] && <div className="message">{messages[item.id]}</div>}
+          </div>
+        </div>
+      </div>
+    ))}
 </div>
 
-                </div>
-              </div>
-            ))}
-            </div>
           </div>
         </div>
     </>
