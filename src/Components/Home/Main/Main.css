@@ -19,18 +19,17 @@
     filter: brightness(80%); /* تعتيم الصورة */
 }
 .card-title {
-    font-size: 2rem;
-    font-weight: 500;
-    line-height: 4rem;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 3.3rem;
     font-family: "FFShamelFamily-SansOneBold", sans-serif;
-    margin-bottom: 0 !important;
+    margin-block: 1rem;
 
 }
 .card-text{
     font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 3rem;
-    margin-bottom: 0 !important;
+    line-height: 2.9rem;
+    color: #6a6f73;
     display: block;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -38,8 +37,6 @@
     overflow: hidden;
     text-overflow: ellipsis;
     /*max-height: 4.2em; /* ارتفاع السطرين */
-    line-height: 1.9em; /* ارتفاع السطر الواحد */
-
 }
 .iconCard{
     position: relative;
@@ -77,17 +74,23 @@
 }
 .marginBoutton {
     margin-bottom: 1rem;
-    padding: 0 !important;
+    padding: 2rem;
 }
 @media (width < 400px) {
+    .marginBoutton {
+        padding: 0 !important;
+    }
     .card-title {
         font-size: 1.6rem;
         padding-top: 0 !important;
         padding-bottom: 0 !important;
-        font-weight: 300 !important;
+        margin-block: 0.3rem;
+        line-height: 2.3rem;
     }
     .card-text {
       font-size: 1rem;
+      line-height: 2rem;
+
     }
     .fa-regular,
 .fa-solid {

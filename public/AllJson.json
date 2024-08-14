@@ -21,7 +21,8 @@
       "By": "أحمد محمد",
       "ByUrl": "",
       "tech": ["Html", "CSS", "JavaScript", "Responsive"],
-      "type": "component"
+      "type": "component",
+      "price": " مجاناَ "
      },
      { "id": 3,
      "title": "توليد رقم عشوائي", 
