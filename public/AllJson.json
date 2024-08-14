@@ -133,7 +133,7 @@
   "type": "component",
   "date": "2024-08-12T09:00:00Z"
  },
- { "id": 8,
+ { "id": 12,
   "title": "صفحة هبوط قريبا الإنطلاق", 
   "description": "صفحة هبوط قريباً الإنطلاق تسنخدم لغرضها قبل إنطلاق الموقع أو أثناء الصيانة , وفي العادة يتم تحديد الوقت المستهدف للإنطلاق ويوجد بالصفحة عداد لحساب المتبقي على إنطلاق الموقع", 
   "img": "https://i.postimg.cc/7h6VT8fY/image.png",
@@ -144,8 +144,43 @@
   "tech": ["Html","CSS", "JavaScript", "Responsive"],
   "type": "Landing page",
   "date": "2024-08-12T09:00:00Z"
- }
+ },
+ { "id": 13,
+ "title": "صفحة هبوط لشركة", 
+ "description": "صفحة هبوط لشركة إينانس لخدمات الصيانة والإصلاح , تحتوي الصفحة على عدة أقسام منها قسم التنقل العلوي , القسم التعريفي بالشركة , قسم من نحن , قسم المميزات , قسم أرقام الشركة , قسم كيف الحصول على خدمتنا . الصفحة متجاوبة مع جميع أحجام الشاشات . ", 
+ "img": "https://i.postimg.cc/TPSTpSfj/image.png",
+ "view": "https://ahmed-mohammed-developer.github.io/INANCE_public/",
+ "download": "https://github.com/ahmed-mohammed-developer/INANCE_public",
+ "By": "أحمد محمد",
+ "ByUrl": "",
+ "tech": ["Html","CSS", "JavaScript", "Sass", "Bootstrap library", "Google fonts", "Font Awesome library", "Responsive"],
+ "type": "Landing page",
+ "date": "2024-08-14T10:00:00Z"
+},
+{ "id": 14,
+"title": "صفحة هبوط شخصية", 
+"description": "صفحة هبوط شخصية باللغة الإنجليزية , يوجد بها الكثير من الأقسام وهي تعتبر مدخل إلى كثير من الأفكار في تصميم صفحات الهبوط الشخصية , يوجد بها أكثر من ثمانية أقسام , كذلك تحتاج الصفحة إلى بعض الروح من خلال إضافة لمسات جافاسكربت لتصبح الصفحة تنبض بالحياة , إذا كنت في بداية طريقك في تصميم واجهات المستخدم فهذا أفضل مثال لمحاولة محاكاته وإستخدامه .", 
+"img": "https://i.postimg.cc/fyMWNdM1/kasper.png",
+"view": "https://ahmed-mohammed-developer.github.io/Template_Two_public/",
+"download": "https://github.com/ahmed-mohammed-developer/Template_Two_public",
+"By": "أحمد محمد",
+"ByUrl": "",
+"tech": ["Html","CSS", "Google fonts", "Font Awesome library", "Responsive"],
+"type": "Landing page",
+"date": "2024-08-12T10:00:00Z"
+},
+{ "id": 15,
+"title": "صفحة هبوط شخصية", 
+"description": "صفحة هبوط شخصية باللغة الإنجليزية , يوجد بها الكثير من الأقسام وهي تعتبر مدخل إلى كثير من الأفكار في تصميم صفحات الهبوط الشخصية , يوجد بها أكثر من خمسة أقسام , كذلك تحتاج الصفحة إلى بعض الروح من خلال إضافة لمسات جافاسكربت لتصبح الصفحة تنبض بالحياة , إذا كنت في بداية طريقك في تصميم واجهات المستخدم فهذا أفضل مثال لمحاولة محاكاته وإستخدامه .", 
+"img": "https://i.postimg.cc/WbHDM9N3/Leon.png",
+"view": "https://ahmed-mohammed-developer.github.io/Templet-_public/",
+"download": "https://github.com/ahmed-mohammed-developer/Templet-_public",
+"By": "أحمد محمد",
+"ByUrl": "",
+"tech": ["Html","CSS", "Google fonts", "Font Awesome library", "Responsive"],
+"type": "Landing page",
+"date": "2024-08-12T10:00:00Z"
+}
     ]
   }
-
 
