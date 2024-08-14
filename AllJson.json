@@ -120,6 +120,18 @@
   "tech": ["Html","CSS", "JavaScript", "Responsive"],
   "type": "component",
   "date": "2024-08-12T09:00:00Z"
+ },
+ { "id": 11,
+  "title": "مولد إقتباسات عشوائية", 
+  "description": "تطبيق مولد الإقتباسات العشوائية لعرض الحكم أو إقتباسات العلماء والمفكرين , يمكن إستخدام المكون في المشاريع الواقعية لكثير من الأفكار , كذلك سهل التخصيص والتعديل , وكذلك تم ربطه بملف JSON", 
+  "img": "https://i.postimg.cc/xd5TpW12/image.png",
+  "view": "https://ahmed-mohammed-developer.github.io/Hikma_Test/",
+  "download": "https://github.com/ahmed-mohammed-developer/Hikma_Test",
+  "By": "أحمد محمد",
+  "ByUrl": "",
+  "tech": ["Responsive", "Html","CSS", "JavaScript", "JSON"],
+  "type": "component",
+  "date": "2024-08-12T09:00:00Z"
  }
     ]
   }
