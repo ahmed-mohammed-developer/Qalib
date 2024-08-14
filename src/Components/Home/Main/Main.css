@@ -82,14 +82,12 @@
     }
     .card-title {
         font-size: 1.6rem;
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
-        margin-block: 0.3rem;
+        margin-block: 0.5rem;
         line-height: 2.3rem;
     }
     .card-text {
-      font-size: 1rem;
-      line-height: 2rem;
+        font-size: 1.2rem;
+        line-height: 2.4rem;
 
     }
     .fa-regular,
