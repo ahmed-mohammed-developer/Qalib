@@ -94,7 +94,7 @@
   "By": "أحمد محمد",
   "ByUrl": "",
   "tech": ["Html","CSS", "JavaScript", "Responsive"],
-  "type": "component",
+  "type": "Landing page",
   "date": "2024-08-14T09:00:00Z"
  },
  { "id": 9,
@@ -131,6 +131,18 @@
   "ByUrl": "",
   "tech": ["Responsive", "Html","CSS", "JavaScript", "JSON"],
   "type": "component",
+  "date": "2024-08-12T09:00:00Z"
+ },
+ { "id": 8,
+  "title": "صفحة هبوط قريبا الإنطلاق", 
+  "description": "صفحة هبوط شخصية باللغة الإنجليزية وبتصميم بسيط ومربح , تساعدك في عرض معلوماتك ومهاراتك وخبراتك , مما يتيح لك بناء ثقة عالية لدى عملائك الحاليين والمحتملين , وصفحة الهبوط الشخصية لها أهمية كبيرة في التسويق الرقمي وزيادة التحويلات .", 
+  "img": "https://i.postimg.cc/7h6VT8fY/image.png",
+  "view": "https://ahmed-mohammed-developer.github.io/coming_soon_website_public/",
+  "download": "https://github.com/ahmed-mohammed-developer/coming_soon_website_public",
+  "By": "أحمد محمد",
+  "ByUrl": "",
+  "tech": ["Html","CSS", "JavaScript", "Responsive"],
+  "type": "Landing page",
   "date": "2024-08-12T09:00:00Z"
  }
     ]
