@@ -28,7 +28,7 @@
 }
 .card-text{
     font-size: 1.6rem;
-    line-height: 2.9rem;
+    line-height: 2.4rem;
     color: #6a6f73;
     display: block;
     display: -webkit-box;
@@ -79,16 +79,6 @@
 @media (width < 400px) {
     .marginBoutton {
         padding: 0 !important;
-    }
-    .card-title {
-        font-size: 1.6rem;
-        margin-block: 0.5rem;
-        line-height: 2.3rem;
-    }
-    .card-text {
-        font-size: 1.2rem;
-        line-height: 2.4rem;
-
     }
     .fa-regular,
 .fa-solid {
