@@ -47,7 +47,7 @@ const Details = () => {
           <div className="col-lg-4 col-md-12 col-sm-12">
             <div className="title-qalib">
               <h2>{data.title}</h2>
-              <Link to={data.ByUrl} target="_blank" className="custom-link"><p><span>تصميم : </span>{data.By}</p></Link>
+              <Link to={data.ByUrl} target="_blank" className="custom-link"><p><span>بواسطة : </span>{data.By}</p></Link>
             </div>
             <div className="text-det">
               <h2>وفر الوقت والجهد مع قوالب الويب.</h2>
