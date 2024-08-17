@@ -63,7 +63,7 @@ const Baner = () => {
         <div className="container banerContainer">
         <Slider {...settings}>
         {data.map((item, index)=> (
-             <div className="row"  key={index}>
+             <div className="row p-0"  key={index}>
                  <div className="col-xl-12 .col-lg-12 col-md-12 col-sm-12">
                  <div className="imgBaner">
                      <img src={item.img} alt={item.title} />

@@ -130,9 +130,11 @@ const Main = () => {
       </div>
     ))}
     {showMorePost >= data.length ? null : (
-                         <span className="load-more-button" onClick={lodMore}>
-                          للمزيد
-                     </span>
+      <div>
+            <span className="load-more-button" onClick={lodMore}>
+                للمزيد
+            </span>
+            </div>
                 )}
 </div>
 
