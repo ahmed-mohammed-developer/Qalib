@@ -76,6 +76,23 @@
     margin-bottom: 1rem;
     padding: 2rem;
 }
+.load-more-button {
+    font-family: "FFShamelFamily-SansOneBold", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    background-color: #2d2f31;
+    width: fit-content;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    margin: 0 auto 0;
+    cursor: pointer;
+}
+.load-more-button:hover{
+    background-color: #6cee69;
+    transition-duration: 1s;
+}
+    
 @media (width < 400px) {
     .marginBoutton {
         padding: 0 !important;

@@ -52,6 +52,10 @@ const Main = () => {
   const [savedItems, setSavedItems] = useState([]);
   const [message, setMessage] = useState('');
   const [messages, setMessages] = useState({});
+  const [showMorePost, setShowMorePost] = useState(3)
+  const lodMore = () => {
+      setShowMorePost((prev) => prev + 3);
+  }
 
 
 
@@ -96,6 +100,7 @@ const Main = () => {
           <div className="row">
   {data
     .sort((a, b) => new Date(b.date) - new Date(a.date)) // ترتيب العناصر بترتيب تنازلي
+    .slice(0, showMorePost) // إضافة هذا الجزء لتحديد عدد العناصر المعروضة
     .map((item, index) => (
       <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 marginBoutton" key={index}>
         <div className="card" style={{ position: 'relative' }}>
@@ -124,6 +129,11 @@ const Main = () => {
         </div>
       </div>
     ))}
+    {showMorePost >= data.length ? null : (
+                         <span className="load-more-button" onClick={lodMore}>
+                          للمزيد
+                     </span>
+                )}
 </div>
 
           </div>
