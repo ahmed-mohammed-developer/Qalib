@@ -46,6 +46,8 @@ import React, { useState, useEffect } from 'react';
 import './Main.css';
 import AllJson from '../../../../public/AllJson.json';
 import { Link } from 'react-router-dom';
+import { MdExpandMore } from "react-icons/md";
+
 
 const Main = () => {
   const data = AllJson.posts;
@@ -132,7 +134,7 @@ const Main = () => {
     {showMorePost >= data.length ? null : (
       <div>
             <span className="load-more-button" onClick={lodMore}>
-                للمزيد
+                للمزيد <MdExpandMore size={20}/>
             </span>
             </div>
                 )}
