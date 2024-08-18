@@ -27,6 +27,9 @@
 .custom-select{
     height: 5rem;
 }
+.button-submit {
+    margin-top: 2rem;
+}
 .button-submit p {
     display: flex;
     justify-content: center;
