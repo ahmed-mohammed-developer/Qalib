@@ -5,6 +5,8 @@ import Home from './Components/Home/Home'
 import LandingPage from './Components/LandingPage/LandingPage'
 import EShop from './Components/EShop/EShop'
 import Details from './Components/Details/Details'
+import ScrollToTop from "react-scroll-to-top";
+
 const App = () => {
   return (
     <div>
@@ -17,6 +19,13 @@ const App = () => {
         <Route path="/Qalib/Details/:id" element={<Details />} />
         <Route path="*" element={<Navigate to="/Qalib/" />} />
       </Routes>
+      <ScrollToTop smooth
+    top="300"
+    color='white'
+    height='20'
+    width='20'
+    style={{borderRadius:"90px", backgroundColor:"#2d2f31"}}
+    />
     </BrowserRouter>
     </div>
   )
