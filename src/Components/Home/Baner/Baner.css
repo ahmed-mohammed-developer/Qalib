@@ -10,9 +10,9 @@
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
-.row {
+/*.row {
     height: 50rem;
-}
+}*/
 .description-baner h1 {
     font-size: 4rem;
     line-height: 5.6rem;
@@ -20,7 +20,6 @@
     font-family: "FFShamelFamily-SansOneBold", sans-serif;
     color: #2d2f31;
     margin-bottom: 3rem;
-    text-align: right;
     text-align: center;
 }
 .description-baner p {
@@ -38,11 +37,13 @@
     display: block;
     margin: 0 auto;
 }
+/*
 @media (width > 995px) {
     .row {
         height: 40rem;
     }
 }
+    */
 
 @media (width < 576px) {
   .description-baner h1 {
@@ -65,9 +66,11 @@
    
 }
 @media (width < 512px) {
+    /*
     .row {
         height: 42rem;
     }
+        */
     .description-baner h1 {
       font-size: 2rem;
       line-height: 3rem;

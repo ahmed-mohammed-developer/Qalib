@@ -5,6 +5,7 @@ import Home from './Components/Home/Home'
 import LandingPage from './Components/LandingPage/LandingPage'
 import EShop from './Components/EShop/EShop'
 import Details from './Components/Details/Details'
+import Contact from './Components/Contact/Contact'
 import ScrollToTop from "react-scroll-to-top";
 
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
     style={{borderRadius:"90px", backgroundColor:"#2d2f31"}}
     />
     </BrowserRouter>
+    <Contact />
     </div>
   )
 }

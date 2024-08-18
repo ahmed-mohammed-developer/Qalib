@@ -4,7 +4,7 @@ import Main from './Main/Main'
 
 const Home = () => {
   return (
-    <div>
+    <div className='home'>
       <Baner />
       <Main />
     </div>

@@ -54,8 +54,8 @@
 }
 .fa-bookmark.saved {
     color: #6cee69; /* اللون الذي تريده عند حفظ العنصر */
-  }
-  
+}
+
 .message {
     position: absolute;
     font-family: "FFShamelFamily-SansOneBold", sans-serif;
