@@ -5,8 +5,10 @@ import Home from './Components/Home/Home'
 import LandingPage from './Components/LandingPage/LandingPage'
 import EShop from './Components/EShop/EShop'
 import Details from './Components/Details/Details'
-import Contact from './Components/Contact/Contact'
 import ScrollToTop from "react-scroll-to-top";
+import { FaWhatsapp } from 'react-icons/fa';
+import './App.css';
+
 
 const App = () => {
   return (
@@ -25,10 +27,12 @@ const App = () => {
     color='white'
     height='20'
     width='20'
-    style={{borderRadius:"90px", backgroundColor:"#2d2f31"}}
+    style={{borderRadius:"90px", backgroundColor:"#2d2f31", right: "15px"}}
     />
     </BrowserRouter>
-    <Contact />
+    <a href="https://wa.me/966506353350" className="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <FaWhatsapp size={40} />
+      </a>
     </div>
   )
 }
