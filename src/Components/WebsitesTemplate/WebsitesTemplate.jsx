@@ -6,7 +6,7 @@ import { MdExpandMore } from "react-icons/md";
 
 
 
-const CompanyWebsites = () => {
+const WebsitesTemplate = () => {
   const data = AllJson.posts;
   const [savedItems, setSavedItems] = useState([]);
   const [messages, setMessages] = useState({});
@@ -104,4 +104,4 @@ const CompanyWebsites = () => {
   );
 }
 
-export default CompanyWebsites
+export default WebsitesTemplate

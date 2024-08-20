@@ -70,6 +70,8 @@ nav {
             justify-content: space-between;
             align-items: center;
             padding-inline: 2rem;
+            z-index: 1000;
+            width: 100%;
         }
         .nav-top  {
         display: none;
@@ -103,8 +105,10 @@ nav {
     }
     .mobil-nav {
         position: absolute;
-        top: 8.9rem;
+        top: 7.9rem;
         background-color: #2d2f31;
+        max-width: 90%;
+        width: 100%;
     }
     .mobil-nav ul {
         margin: 0  !important;
