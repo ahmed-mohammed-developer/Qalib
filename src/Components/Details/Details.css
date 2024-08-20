@@ -101,6 +101,28 @@
     margin-right: 30px;
     margin-top: 10px;
 }
+.category-container {
+    display: flex;
+    gap: 20px; /* يمكنك تعديل المسافة حسب الحاجة */
+    flex-wrap: wrap; /* يتيح للعناصر الانتقال إلى سطر جديد */
+}
+
+.category {
+    margin: 0;
+    padding: 10px 15px; /* يمكنك تعديل الحواف حسب الحاجة */
+    border-radius: 48px; /* زوايا مستديرة اختيارية */
+    border: 1px solid #2d2f31;
+    font-weight: 500;
+    cursor: pointer;
+    word-wrap: break-word; /* يكسر الكلمات الطويلة وينقلها إلى سطر جديد */
+    white-space: normal; /* يتيح للنص الانتقال إلى سطر جديد */
+}
+
+  .category:hover {
+    background-color: #eeeeef  ;
+    transition-duration: 1s;
+  }
+  
 @media (width < 992px) {
     .text-det {
         display: none;

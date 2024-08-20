@@ -1,16 +1,16 @@
 .whatsapp-float {
     position: fixed;
-    width: 46px;
-    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
     bottom: 40px;
     right: auto;
     left: 15px;
     background-color: #25d366;
     color: #FFF;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 10px;
-    box-shadow: 2px 2px 3px #999;
+    border-radius: 50%;
     z-index: 1000;
   }
   

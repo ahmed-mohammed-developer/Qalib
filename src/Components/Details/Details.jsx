@@ -10,31 +10,34 @@ import AllJson from '../../../public/AllJson.json'
 
 const Details = () => {
   const [data, setData] = useState(null);
-  const [tech, setTech] = useState([]); // حالة جديدة لتخزين tech
-  const { id } = useParams();
-  const baseApi = axios.create({
-    baseURL: '/Qalib/AllJson.json'
-  });
+const [tech, setTech] = useState([]); // حالة لتخزين tech
+const [type, setType] = useState([]); // حالة جديدة لتخزين type
+const { id } = useParams();
+const baseApi = axios.create({
+  baseURL: '/Qalib/AllJson.json'
+});
 
-  const fetchDetails = async () => {
-    try {
-      const response = await baseApi.get('');
-      console.log("البيانات المستجابة:", response.data.posts);
-      const item = response.data.posts.find(post => post.id === parseInt(id));
-      if (item) {
-        setData(item);
-        setTech(item.tech); // تحديث حالة tech
-      } else {
-        console.log("لم يتم العثور على العنصر:", id);
-      }
-    } catch (error) {
-      console.log("Exist", error);
+const fetchDetails = async () => {
+  try {
+    const response = await baseApi.get('');
+    console.log("البيانات المستجابة:", response.data.posts);
+    const item = response.data.posts.find(post => post.id === parseInt(id));
+    if (item) {
+      setData(item);
+      setTech(item.tech); // تحديث حالة tech
+      setType(item.type); // تحديث حالة type
+    } else {
+      console.log("لم يتم العثور على العنصر:", id);
     }
-  };
+  } catch (error) {
+    console.log("Exist", error);
+  }
+};
 
-  useEffect(() => {
-    fetchDetails();
-  }, [id]);
+useEffect(() => {
+  fetchDetails();
+}, [id]);
+
   return (
     <div className="details">
     <div className="container">
@@ -86,9 +89,17 @@ const Details = () => {
               {tech.map((item, index) => (
             <p key={index} className="tech">{item}</p>
           ))}
+           <h3 className='hdes mb-3'> الفئة :</h3>
+           <div className="category-container">
+                {type.map((item, index) => (
+                <p key={index} className="category">{item}</p>
+          ))}
+           </div>
+
                   </div>
             </div>
            </div>
+           
           </>
         ) : (
           <p>لم يتم العثور على البيانات</p>

@@ -10,7 +10,7 @@
        "ByUrl": "",
        "description": "تبويبات المحتوى هي تقنية تستخدم لإنشاء تبويبات (Tabs) في صفحات الويب باستخدام HTML و CSS فقط، دون الحاجة إلى JavaScript. هذه التبويبات تتيح للمستخدمين التنقل بين محتويات مختلفة داخل نفس الصفحة بطريقة سلسة وجذابة.",
        "tech": ["Html", "CSS"],
-       "type": "component",
+       "type": ["أخرى"],
        "date": "2022-08-14T09:00:00Z"
       },
       { "id": 2,
@@ -22,7 +22,7 @@
       "By": "أحمد محمد",
       "ByUrl": "",
       "tech": ["Html", "CSS", "JavaScript", "Responsive"],
-      "type": "component",
+      "type": ["أخرى", "شريط التنقل"],
       "date": "2024-08-13T09:00:00Z"
      },
      { "id": 3,
@@ -34,7 +34,7 @@
      "By": "أحمد محمد",
      "ByUrl": "",
      "tech": ["Html", "CSS", "JavaScript", "Responsive"],
-     "type": "component",
+     "type": ["أخرى"],
      "date": "2023-08-14T09:00:00Z"
     },
     { "id": 4,
@@ -46,7 +46,7 @@
     "By": "أحمد محمد",
     "ByUrl": "",
     "tech": ["Html", "CSS", "JavaScript", "Responsive"],
-    "type": "component",
+    "type": ["أخرى"],
     "date": "2023-08-14T09:00:00Z"
    },
    { "id": 5,
@@ -58,7 +58,7 @@
    "By": "أحمد محمد",
    "ByUrl": "",
    "tech": ["Html", "CSS", "JavaScript", "Responsive"],
-   "type": "component",
+   "type": ["أخرى"],
    "date": "2023-08-14T09:00:00Z"
   },
   { "id": 6,
@@ -70,7 +70,7 @@
   "By": "أحمد محمد",
   "ByUrl": "",
   "tech": ["Html", "JavaScript"],
-  "type": "component",
+  "type": ["أخرى"],
   "date": "2023-08-14T09:00:00Z"
  },
  { "id": 7,
@@ -82,7 +82,7 @@
   "By": "أحمد محمد",
   "ByUrl": "",
   "tech": ["Html","CSS", "JavaScript"],
-  "type": "component",
+  "type": ["أخرى"],
   "date": "2023-08-14T09:00:00Z"
  },
  { "id": 8,
@@ -94,7 +94,7 @@
   "By": "أحمد محمد",
   "ByUrl": "",
   "tech": ["Html","CSS", "JavaScript", "Responsive"],
-  "type": "Landing page",
+  "type": ["صفحة هبوط","موقع شخصي"],
   "date": "2024-08-14T09:00:00Z"
  },
  { "id": 9,
@@ -106,7 +106,7 @@
   "By": "أحمد محمد",
   "ByUrl": "",
   "tech": ["Html","CSS", "JavaScript", "Responsive", "ExchangeRate-API"],
-  "type": "component",
+  "type": ["أخرى"],
   "date": "2024-08-11T09:00:00Z"
  },
  { "id": 10,
@@ -118,7 +118,7 @@
   "By": "أحمد محمد",
   "ByUrl": "",
   "tech": ["Html","CSS", "JavaScript", "Responsive"],
-  "type": "component",
+  "type": ["أخرى"],
   "date": "2024-08-12T09:00:00Z"
  },
  { "id": 11,
@@ -130,7 +130,7 @@
   "By": "أحمد محمد",
   "ByUrl": "",
   "tech": ["Responsive", "Html","CSS", "JavaScript", "JSON"],
-  "type": "component",
+  "type": ["أخرى"],
   "date": "2024-08-12T09:00:00Z"
  },
  { "id": 12,
@@ -142,7 +142,7 @@
   "By": "أحمد محمد",
   "ByUrl": "",
   "tech": ["Html","CSS", "JavaScript", "Responsive"],
-  "type": "Landing page",
+  "type": ["صفحة هبوط"],
   "date": "2024-08-12T09:00:00Z"
  },
  { "id": 13,
@@ -154,7 +154,7 @@
  "By": "أحمد محمد",
  "ByUrl": "",
  "tech": ["Html","CSS", "JavaScript", "Sass", "Bootstrap library", "Google fonts", "Font Awesome library", "Responsive"],
- "type": "Landing page",
+ "type": ["صفحة هبوط", "موقع شركة"],
  "date": "2024-08-14T10:00:00Z"
 },
 { "id": 14,
@@ -178,7 +178,7 @@
 "By": "أحمد محمد",
 "ByUrl": "",
 "tech": ["Html","CSS", "Google fonts", "Font Awesome library", "Responsive"],
-"type": "Landing page",
+"type": ["صفحة هبوط", "موقع شخصي"],
 "date": "2024-08-12T10:00:00Z"
 },
 { "id": 16,
@@ -190,7 +190,7 @@
 "By": "أحمد محمد",
 "ByUrl": "",
 "tech": ["Html","CSS", "Google fonts", "Font Awesome library", "Responsive"],
-"type": "Landing page",
+"type": ["صفحة هبوط","موقع شخصي"],
 "date": "2024-08-12T10:00:00Z"
 },
 { "id": 17,
@@ -202,7 +202,7 @@
 "By": "أحمد محمد",
 "ByUrl": "",
 "tech": ["Html","CSS", "JavaScript", "Google fonts", "Font Awesome library", "Responsive"],
-"type": "Landing page",
+"type": ["صفحة هبوط","موقع شخصي"],
 "date": "2024-08-15T10:00:00Z"
 },
 { "id": 18,
@@ -214,7 +214,7 @@
 "By": "أحمد محمد",
 "ByUrl": "",
 "tech": ["Html","CSS", "JavaScript", "Bootstrap library", "Google fonts", "Font Awesome library", "Responsive"],
-"type": "Landing page",
+"type": ["صفحة هبوط","موقع شركة"],
 "date": "2024-08-12T10:00:00Z"
 },
 { "id": 19,
@@ -226,7 +226,7 @@
 "By": "أحمد محمد",
 "ByUrl": "",
 "tech": ["Html","CSS", "JavaScript", "Bootstrap library", "Sass", "Google fonts", "Font Awesome library", "Responsive"],
-"type": "Landing page",
+"type": ["component"],
 "date": "2024-08-15T01:00:00Z"
 },
 { "id": 20,
@@ -238,7 +238,7 @@
 "By": "أحمد محمد",
 "ByUrl": "",
 "tech": ["Html","CSS", "JavaScript", "Bootstrap library",  "Google fonts", "Font Awesome library", "Responsive"],
-"type": "Landing page",
+"type": ["صفحة هبوط"],
 "date": "2024-08-14T10:00:00Z"
 },
 { "id": 21,
@@ -250,7 +250,7 @@
 "By": "أحمد محمد",
 "ByUrl": "",
 "tech": ["Html","CSS", "JavaScript", "Bootstrap library","Sass", "Google fonts", "Font Awesome library", "Responsive"],
-"type": "Landing page",
+"type": ["صفحة هبوط","موقع شركة"],
 "date": "2024-08-15T10:00:00Z"
 },
 { "id": 22,
@@ -262,7 +262,7 @@
 "By": "أحمد محمد",
 "ByUrl": "",
 "tech": ["Html","CSS", "JavaScript", "Google fonts", "Font Awesome library", "Responsive"],
-"type": "Landing page",
+"type": ["لوحة تحكم","أخرى"],
 "date": "2024-08-14T10:00:00Z"
 },
 { "id": 23,
@@ -274,7 +274,7 @@
 "By": "أحمد محمد",
 "ByUrl": "",
 "tech": ["Html","CSS", "JavaScript", "Bootstrap library", "Google fonts", "Font Awesome library", "Responsive"],
-"type": "Landing page",
+"type": ["صفحة هبوط"],
 "date": "2024-08-15T10:00:00Z"
 },
 { "id": 24,
@@ -286,7 +286,7 @@
 "By": "أحمد محمد",
 "ByUrl": "",
 "tech": ["Html","CSS", "JavaScript", "Bootstrap library", "Google fonts", "Font Awesome library", "Responsive"],
-"type": "Landing page",
+"type": ["أخرى"],
 "date": "2024-08-15T10:00:00Z"
 },
 { "id": 25,
@@ -298,7 +298,7 @@
 "By": "أحمد محمد",
 "ByUrl": "",
 "tech": ["Html","CSS", "JavaScript", "Bootstrap library", "Google fonts", "Font Awesome library", "Responsive", "webpack"],
-"type": "Landing page",
+"type": ["متجر إلكتروني"],
 "date": "2024-08-15T10:10:00Z"
 },
 { "id": 26,
@@ -310,7 +310,7 @@
 "By": "أحمد محمد",
 "ByUrl": "",
 "tech": ["Html","CSS", "JavaScript", "Bootstrap library", "Sass", "Google fonts", "Font Awesome library", "Responsive", "webpack"],
-"type": "Landing page",
+"type": ["موقع شركة"],
 "date": "2024-08-14T10:10:00Z"
 },
 { "id": 27,
@@ -322,7 +322,7 @@
 "By": "أحمد محمد",
 "ByUrl": "",
 "tech": ["Html","CSS", "Bootstrap library", "Google fonts",  "Responsive"],
-"type": "Landing page",
+"type": ["أخرى","404"],
 "date": "2024-08-14T10:10:00Z"
 }
     ]
