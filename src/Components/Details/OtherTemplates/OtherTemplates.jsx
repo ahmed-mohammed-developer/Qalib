@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../../Home/Main/Main.css';
+import './OtherTemplates.css'
 import AllJson from '../../../../public/AllJson.json';
 import { Link } from 'react-router-dom';
 import { MdExpandMore } from "react-icons/md";
@@ -53,7 +54,7 @@ const OtherTemplates = () => {
             <div className="container">
             <div className="row">
     {data
-    .sort(() => Math.random() - 0.5) // ترتيب العناصر بشكل عشوائي
+          .sort(() => Math.random() - 0.5) // ترتيب العناصر بشكل عشوائي
       .slice(0, showMorePost) // إضافة هذا الجزء لتحديد عدد العناصر المعروضة
       .map((item, index) => (
         <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 marginBoutton" key={index}>
@@ -62,24 +63,23 @@ const OtherTemplates = () => {
               <img src={`${item.img}?${index}`} className="card-img-top" alt="" />
             </Link>
             <Link to={`/Qalib/Details/${item.id}`} className="custom-link">
-              <div className="card-body">
+              <div className="card-body mb-2">
                 <h5 className="card-title">{item.title}</h5>
                 <p className="card-text">{item.description}</p>
               </div>
             </Link>
-            <div className="iconCard">
-              <Link to={item.view} target="_blank" className="custom-link">
-                <i className="fa-regular fa-eye"></i>
-              </Link>
-              <Link to={item.download} target="_blank" className="custom-link">
-                <i className="fa-solid fa-file-arrow-down"></i>
-              </Link>
-              <i className={`fa-solid fa-heart ${isItemSaved(item) ? 'saved' : ''}`} 
-                onClick={() => saveToLocalStorage(item)}
-                style={{ color: isItemSaved(item) ? '#6cee69' : 'inherit' }}
-              ></i>
-              {messages[item.id] && <div className="message">{messages[item.id]}</div>}
+            <Link to={item.view} target="_blank" className="custom-link">
+            <div className='text-icon2'>
+            <i className="fa-regular fa-eye"></i>
+            <p>لمشاهدة القالب</p>
             </div>
+            </Link>
+            <Link to={data.download} target="_blank" className="custom-link">
+            <div className="text-icon2">
+            <i className="fa-solid fa-file-arrow-down"></i>
+            <p>لتحميل القالب</p>
+            </div>
+            </Link>
           </div>
         </div>
       ))}
