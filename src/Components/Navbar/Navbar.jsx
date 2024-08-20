@@ -21,8 +21,8 @@ const Navbar = () => {
          <ul>
             <li>جميع القوالب</li>
             <li><Link to="/Qalib/LandingPage">صفحات الهبوط</Link></li>
-            <li> موقع للشركات</li>
-            <li>موقع شخصي</li>
+            <li><Link to="/Qalib/CompanyWebsites">قالب للشركات</Link></li>
+            <li><Link to="/Qalib/PersonalTemplate">قالب  شخصي</Link></li>
             <li>أخرى</li>
           </ul>
          </div>
@@ -47,8 +47,8 @@ const Navbar = () => {
       <ul>
       <li><Link to="/Qalib/">الرئسية</Link></li>
       <li><Link to="/Qalib/LandingPage">صفحات الهبوط</Link></li>
-        <li> موقع للشركات</li>
-        <li>موقع شخصي</li>
+      <li><Link to="/Qalib/CompanyWebsites">قالب للشركات</Link></li>
+      <li><Link to="/Qalib/PersonalTemplate">قالب  شخصي</Link></li>
         <li>أخرى</li>
       </ul>
       </div>

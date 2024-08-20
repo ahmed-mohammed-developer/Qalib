@@ -6,7 +6,7 @@ import { MdExpandMore } from "react-icons/md";
 
 
 
-const LandingPage = () => {
+const PersonalTemplate = () => {
   const data = AllJson.posts;
   const [savedItems, setSavedItems] = useState([]);
   const [messages, setMessages] = useState({});
@@ -21,7 +21,7 @@ const LandingPage = () => {
     const saved = JSON.parse(localStorage.getItem('savedItems')) || [];
     setSavedItems(saved);
   }, []);
-  const filteredData = data.filter(item => item.type.includes("صفحة هبوط"));
+  const filteredData = data.filter(item => item.type.includes("موقع شخصي"));
 
   const saveToLocalStorage = (item) => {
     let updatedSavedItems = [...savedItems];
@@ -58,7 +58,7 @@ const LandingPage = () => {
           <div className="container">
           <div className="row">
           {data
-              .filter(item => item.type.includes("صفحة هبوط")) // تصفية العناصر
+              .filter(item => item.type.includes("موقع شخصي")) // تصفية العناصر
               .sort((a, b) => new Date(b.date) - new Date(a.date)) // ترتيب العناصر بترتيب تنازلي
               .slice(0, showMorePost) // تحديد عدد العناصر المعروضة
               .map((item, index) => (
@@ -104,4 +104,4 @@ const LandingPage = () => {
   );
 }
 
-export default LandingPage
+export default PersonalTemplate

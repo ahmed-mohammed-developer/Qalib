@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import '../../Home/Main/Main.css';
 import './OtherTemplates.css'
 import AllJson from '../../../../public/AllJson.json';
 import { Link } from 'react-router-dom';
