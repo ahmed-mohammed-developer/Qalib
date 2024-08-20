@@ -3,8 +3,7 @@ import './Details.css'
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import AllJson from '../../../public/AllJson.json'
-
+import OtherTemplates from './OtherTemplates/OtherTemplates'
 
 
 
@@ -95,11 +94,11 @@ useEffect(() => {
                 <p key={index} className="category">{item}</p>
           ))}
            </div>
-
-                  </div>
+           <h3 className='OtherTemplates-title mb-3'>قوالب أخرى:</h3>
+          </div>
             </div>
            </div>
-           
+           <OtherTemplates />
           </>
         ) : (
           <p>لم يتم العثور على البيانات</p>
