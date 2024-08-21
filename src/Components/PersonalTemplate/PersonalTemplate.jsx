@@ -6,6 +6,7 @@ import { MdExpandMore } from "react-icons/md";
 
 
 
+
 const PersonalTemplate = () => {
   const data = AllJson.posts;
   const [savedItems, setSavedItems] = useState([]);
@@ -21,6 +22,11 @@ const PersonalTemplate = () => {
     const saved = JSON.parse(localStorage.getItem('savedItems')) || [];
     setSavedItems(saved);
   }, []);
+
+
+
+ 
+
   const filteredData = data.filter(item => item.type.includes("موقع شخصي"));
 
   const saveToLocalStorage = (item) => {
