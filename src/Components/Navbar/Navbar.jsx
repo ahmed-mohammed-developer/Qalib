@@ -1,7 +1,7 @@
 
 
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink  } from 'react-router-dom'
 import './Navbar.css'
 import imgLogo from '../../assets/images/5.png'
 
@@ -25,19 +25,19 @@ const Navbar = () => {
       {open ? (
          <div className="mobil-nav disNon">
          <ul>
-           <li><Link to="/Qalib/" onClick={handleLinkClick}>الرئسية</Link></li>
-           <li><Link to="/Qalib/LandingPage" onClick={handleLinkClick}>صفحات الهبوط</Link></li>
-           <li><Link to="/Qalib/WebsitesTemplate" onClick={handleLinkClick}>قالب للشركات</Link></li>
-           <li><Link to="/Qalib/PersonalTemplate" onClick={handleLinkClick}>قالب شخصي</Link></li>
-           <li><Link to="/Qalib/OtherTemplate" onClick={handleLinkClick}>أخرى</Link></li>
+           <li><NavLink to="/Qalib/"className={({ isActive }) => isActive ? 'active-navItem custom-navlink' : 'custom-navlink'}end onClick={handleLinkClick}>الرئسية</NavLink></li>
+           <li><NavLink to="/Qalib/LandingPage"className={({ isActive }) => isActive ? 'active-navItem custom-navlink' : 'custom-navlink'}end onClick={handleLinkClick}>صفحات الهبوط</NavLink></li>
+           <li><NavLink to="/Qalib/WebsitesTemplate" className={({ isActive }) => isActive ? 'active-navItem custom-navlink' : 'custom-navlink'}end onClick={handleLinkClick}>قالب للشركات</NavLink></li>
+           <li><NavLink to="/Qalib/PersonalTemplate" className={({ isActive }) => isActive ? 'active-navItem custom-navlink' : 'custom-navlink'}end onClick={handleLinkClick}>قالب شخصي</NavLink></li>
+           <li><NavLink to="/Qalib/OtherTemplate"className={({ isActive }) => isActive ? 'active-navItem custom-navlink' : 'custom-navlink'}end onClick={handleLinkClick}>أخرى</NavLink></li>
          </ul>
          </div>
      ) : null}
         </div>
               <div>
-                <Link to="/Qalib/">
+                <NavLink to="/Qalib/">
                 <img src={imgLogo} alt="logo Image" />
-                </Link>
+                </NavLink>
               </div>
               <div>
               <i class="fa-solid fa-magnifying-glass disNon"></i>
@@ -53,11 +53,11 @@ const Navbar = () => {
     <div className="pages">
       <div className="container">
       <ul>
-      <li><Link to="/Qalib/">الرئسية</Link></li>
-      <li><Link to="/Qalib/LandingPage">صفحات الهبوط</Link></li>
-      <li><Link to="/Qalib/WebsitesTemplate">قالب للشركات</Link></li>
-      <li><Link to="/Qalib/PersonalTemplate">قالب  شخصي</Link></li>
-      <li><Link to="/Qalib/OtherTemplate">أخرى</Link></li>
+      <li><NavLink to="/Qalib" className={({ isActive }) => isActive ? 'active-navItem custom-navlink' : 'custom-navlink'}end>الرئيسية</NavLink></li>
+      <li><NavLink to="/Qalib/LandingPage" className={({ isActive }) => isActive ? 'active-navItem custom-navlink' : 'custom-navlink'} end>صفحات الهبوط</NavLink></li>
+      <li><NavLink to="/Qalib/WebsitesTemplate" className={({ isActive }) => isActive ? 'active-navItem custom-navlink' : 'custom-navlink'} end>قالب للشركات</NavLink></li>
+      <li><NavLink to="/Qalib/PersonalTemplate" className={({ isActive }) => isActive ? 'active-navItem custom-navlink' : 'custom-navlink'} end>قالب  شخصي</NavLink></li>
+      <li><NavLink to="/Qalib/OtherTemplate" className={({ isActive }) => isActive ? 'active-navItem custom-navlink' : 'custom-navlink'} end>أخرى</NavLink></li>
       </ul>
       </div>
     

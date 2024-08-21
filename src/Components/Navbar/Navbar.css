@@ -51,6 +51,15 @@ nav {
     font-size: 1.6rem;
     font-weight: bold;
 }
+.custom-navlink {
+    color: #2d2f31;
+    text-decoration: none;
+}
+.active-navItem {
+    color: #6cee69;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* ظل النص باللون الأسود مع شفافية */
+}
+  
 @media (width < 785px) {
   
    .nav-top form {
@@ -105,10 +114,12 @@ nav {
     }
     .mobil-nav {
         position: absolute;
-        top: 7.9rem;
-        background-color: #2d2f31;
+        top: 8rem;
         max-width: 90%;
         width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        background-color: #fff;
+
     }
     .mobil-nav ul {
         margin: 0  !important;
@@ -122,7 +133,7 @@ nav {
         line-height: 2.2rem;
         cursor: pointer;
         color: #fff;
-        margin-top: 1.5rem;
+        margin-block: 2.5rem;
         font-weight: 700;
     }
     .fa-solid {
