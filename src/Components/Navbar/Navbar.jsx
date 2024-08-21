@@ -88,6 +88,8 @@ import React, { useState } from 'react'
 import { NavLink  } from 'react-router-dom'
 import './Navbar.css'
 import imgLogo from '../../assets/images/5.png'
+import SaudiTime from '../SaudiTime/SaudiTime'
+
 
 const Navbar = () => {
   const [open, setOpen] = useState(false)
@@ -104,6 +106,11 @@ const Navbar = () => {
     <>
     <nav>
       <div className='container navbar'>
+      <div>
+                <NavLink to="/Qalib/">
+                <img src={imgLogo} alt="logo Image" />
+                </NavLink>
+              </div>
         <div className='disNon'>
         <i className="fa-solid fa-bars" onClick={handleNavbarOpen}></i>
       {open ? (
@@ -118,19 +125,8 @@ const Navbar = () => {
          </div>
      ) : null}
         </div>
-              <div>
-                <NavLink to="/Qalib/">
-                <img src={imgLogo} alt="logo Image" />
-                </NavLink>
-              </div>
-              <div>
-              <i class="fa-solid fa-magnifying-glass disNon"></i>
-              </div>
         <div className="nav-top">
-          <form>
-          <i class='fa-solid fa-magnifying-glass'></i>
-          <input type="text" placeholder='إبحث'/>
-          </form>
+        <SaudiTime />
         </div>
       </div>
     </nav>

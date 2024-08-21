@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import AllJson from '../../../public/AllJson.json';
 import { Link } from 'react-router-dom';
@@ -6,23 +5,29 @@ import { MdExpandMore } from "react-icons/md";
 
 
 
+
 const OtherTemplate = () => {
   const data = AllJson.posts;
   const [savedItems, setSavedItems] = useState([]);
   const [messages, setMessages] = useState({});
+  const [searchTerm, setSearchTerm] = useState('');
   const [showMorePost, setShowMorePost] = useState(6)
   const lodMore = () => {
       setShowMorePost((prev) => prev + 3);
   }
 
 
-
   useEffect(() => {
     const saved = JSON.parse(localStorage.getItem('savedItems')) || [];
     setSavedItems(saved);
   }, []);
-  const filteredData = data.filter(item => item.type.includes("أخرى"));
 
+  const filteredData = data.filter(item => 
+    item.type.includes("أخرى") && 
+    (item.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
+     item.description.toLowerCase().includes(searchTerm.toLowerCase()))
+  );
+  
   const saveToLocalStorage = (item) => {
     let updatedSavedItems = [...savedItems];
     let updatedMessages = { ...messages };
@@ -54,10 +59,22 @@ const OtherTemplate = () => {
 
   return (
     <>
-        <div className='main mb-5 mt-5'>
+        <div className='main mb-5 mt-3 mt-lg-5 mt-md-5'>
+        <div className="container">
+          <div className="row"> 
+            <div className='input-section'>
+            <input
+        type="text"
+        placeholder="ابحث هنا..."
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+      />
+            </div>
+            </div>
+            </div>
           <div className="container">
           <div className="row">
-          {data
+          {filteredData
               .filter(item => item.type.includes("أخرى")) // تصفية العناصر
               .sort((a, b) => new Date(b.date) - new Date(a.date)) // ترتيب العناصر بترتيب تنازلي
               .slice(0, showMorePost) // تحديد عدد العناصر المعروضة

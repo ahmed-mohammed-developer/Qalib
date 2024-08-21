@@ -16,41 +16,6 @@ nav {
     cursor: pointer;
    
 }
-.nav-top form {
-    border: 1px solid #2d2f31;
-    border-radius: 2.5rem;
-    width: 50rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 4.8rem;
-}
-.nav-top form i {
-    font-size: 2.6rem;
-    line-height: 1.2;
-    color: #6cee69;
-    font-weight: 700;
-    margin-left: 1rem;
-}
-.nav-top input {
-    width: 40rem;
-    background-color: #ffffff53;
-    color: #2d2f31;
-    height: 3.8rem;
-    border: none;
-    font-size: 1.6rem;
-    font-weight: bold;
-}
-.nav-top input:focus {
-    outline: #6cee69 dashed 1px;
-
-}
-.nav-top input::placeholder {
-    color: #2d2f31;
-    padding-right: 0.5rem;
-    font-size: 1.6rem;
-    font-weight: bold;
-}
 .custom-navlink {
     color: #2d2f31;
     text-decoration: none;
@@ -114,17 +79,18 @@ nav {
     }
     .mobil-nav {
         position: absolute;
-        top: 8rem;
+        top: 22.5rem;
+        left: 50%;
         max-width: 90%;
         width: 100%;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
         background-color: #fff;
-
+        transform: translate(-50%, -50%);
     }
+    
     .mobil-nav ul {
         margin: 0  !important;
         padding: 1rem 2rem 2rem 2rem !important;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     }
     .mobil-nav ul li {
         list-style-type: none;
@@ -135,6 +101,7 @@ nav {
         color: #fff;
         margin-block: 2.5rem;
         font-weight: 700;
+        text-align: center;
     }
     .fa-solid {
         font-size: 2rem;

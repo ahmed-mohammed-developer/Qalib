@@ -168,7 +168,7 @@ const WebsitesTemplate = () => {
 
   return (
     <>
-        <div className='main mb-5 mt-5'>
+        <div className='main mb-5 mt-3 mt-lg-5 mt-md-5'>
         <div className="container">
           <div className="row"> 
             <div className='input-section'>

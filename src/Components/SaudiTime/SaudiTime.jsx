@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './SaudiTime.css'
 
 function SaudiTime() {
   const [time, setTime] = useState('');
@@ -23,7 +24,6 @@ function SaudiTime() {
 
   return (
     <div>
-      <p>التاريخ والوقت بتوقيت المملكة العربية السعودية:</p>
       <p>{time}</p>
     </div>
   );
