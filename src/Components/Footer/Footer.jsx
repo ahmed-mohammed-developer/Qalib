@@ -40,9 +40,9 @@ const Footer = () => {
                 <div className="col-lg-3 col-md-6 col-sm-6 mb-5">
                 <div className="deatelsSection marginBottom">
                         <h3>أبقى على تواصل</h3>
-                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-regular fa-envelope-open"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter footericon"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin footericon"></i></a>
+                        <a href="#"><i class="fa-regular fa-envelope-open footericon"></i></a>
                         
                     </div>
                 </div>

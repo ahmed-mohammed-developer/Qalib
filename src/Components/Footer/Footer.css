@@ -26,8 +26,7 @@
 .deatelsSection a {
     text-decoration: none;
 }
-.fa-regular,
-.fa-brands {
+.footericon {
     font-size: 1.7rem;
     line-height: 2.1rem;
     color: #fff;
