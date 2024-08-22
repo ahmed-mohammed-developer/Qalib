@@ -52,8 +52,8 @@ import { MdExpandMore } from "react-icons/md";
 const Main = () => {
   const data = AllJson.posts;
   const [savedItems, setSavedItems] = useState([]);
-  const [message, setMessage] = useState('');
   const [messages, setMessages] = useState({});
+  const [searchTerm, setSearchTerm] = useState('');
   const [showMorePost, setShowMorePost] = useState(3)
   const lodMore = () => {
       setShowMorePost((prev) => prev + 3);
@@ -65,6 +65,18 @@ const Main = () => {
     const saved = JSON.parse(localStorage.getItem('savedItems')) || [];
     setSavedItems(saved);
   }, []);
+
+
+  const handleSearchChange = (event) => {
+    setSearchTerm(event.target.value);
+  };
+  
+ 
+const filteredItems = data.filter(item =>
+  item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+  item.description.toLowerCase().includes(searchTerm.toLowerCase())
+);
+  
 
   const saveToLocalStorage = (item) => {
     let updatedSavedItems = [...savedItems];
@@ -98,9 +110,21 @@ const Main = () => {
   return (
     <>
         <div className='main'>
+        <div className="container">
+          <div className="row"> 
+            <div className='input-section'>
+            <input
+        type="text"
+        placeholder="ابحث هنا..."
+        value={searchTerm}
+        onChange={handleSearchChange }
+      />
+            </div>
+            </div>
+            </div>
           <div className="container">
           <div className="row">
-  {data
+  {filteredItems 
     .sort((a, b) => new Date(b.date) - new Date(a.date)) // ترتيب العناصر بترتيب تنازلي
     .slice(0, showMorePost) // إضافة هذا الجزء لتحديد عدد العناصر المعروضة
     .map((item, index) => (
