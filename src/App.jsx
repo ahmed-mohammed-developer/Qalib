@@ -10,6 +10,7 @@ import Details from './Components/Details/Details'
 import ScrollToTop from "react-scroll-to-top";
 import { FaWhatsapp } from 'react-icons/fa';
 import './App.css';
+import Footer from './Components/Footer/Footer'
 
 
 const App = () => {
@@ -37,6 +38,7 @@ const App = () => {
     <a href="https://wa.me/966506353350" className="whatsapp-float" target="_blank" rel="noopener noreferrer">
         <FaWhatsapp size={40} />
       </a>
+      <Footer />
     </div>
   )
 }
