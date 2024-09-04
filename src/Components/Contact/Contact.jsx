@@ -2,7 +2,6 @@ import React from 'react';
 import './Contact.css';
 import { FiSend } from "react-icons/fi";
 
-
 const Contact = () => {
   return (
     <>
@@ -10,36 +9,36 @@ const Contact = () => {
         <div className="container section-container">
           <div className="row BoxShadow">
             <div className="col-lg-7 col-md-7 col-sm-12">
-                <div className="contact-form-desgin">
-                    <div className="text-center">
-                        <h5>إطلب تخصيص القالب أو تصميم قالب</h5>
-                    </div>
-                    <form>
-                        <div className="contact-form">
-                            <label className='form-labek'>الأسم</label>
-                            <input type="text" className='form-control'/>
-                        </div>
-                        <div className="contact-form">
-                            <label className='form-labek'>الإيميل</label>
-                            <input type="text" className='form-control'/>
-                        </div>
-                        <div className="contact-form">
-                            <label className='form-labek'>إختار الخدمة</label>
-                            <select className='custom-select =form-control'>
-                                <option value="">طلب تصميم</option>
-                                <option value="">تخصيص قالب</option>
-                                <option value="">إستفسار</option>
-                            </select>
-                        </div>
-                        <div className="contact-form">
-                            <label className='form-labek'>تفاصيل الطلب</label>
-                            <textarea type="text"  maxLength="500" className='form-control' rows="6"/>
-                        </div>
-                        <div className="button-submit">
-                            <p>إرسال <FiSend size={20} /></p>
-                        </div>
-                    </form>
+              <div className="contact-form-desgin">
+                <div className="text-center">
+                  <h5>إطلب تخصيص القالب أو تصميم قالب</h5>
                 </div>
+                <form>
+                  <div className="contact-form">
+                    <label className='form-labek'>الأسم</label>
+                    <input type="text" className='form-control' />
+                  </div>
+                  <div className="contact-form">
+                    <label className='form-labek'>الإيميل</label>
+                    <input type="text" className='form-control' />
+                  </div>
+                  <div className="contact-form">
+                    <label className='form-labek'>إختار الخدمة</label>
+                    <select className='custom-select form-control'>
+                      <option value="">طلب تصميم</option>
+                      <option value="">تخصيص قالب</option>
+                      <option value="">إستفسار</option>
+                    </select>
+                  </div>
+                  <div className="contact-form">
+                    <label className='form-labek'>تفاصيل الطلب</label>
+                    <textarea type="text" maxLength="500" className='form-control' rows="6" />
+                  </div>
+                  <div className="button-submit">
+                    <p>إرسال <FiSend size={20} /></p>
+                  </div>
+                </form>
+              </div>
             </div>
             <div className="col-lg-5 col-md-5 col-sm-12">
               <div className="map-location" style={{ position: 'relative', paddingBottom: '56.25%', height: "40rem", overflow: 'hidden' }}>

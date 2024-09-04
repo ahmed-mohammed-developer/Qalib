@@ -5,6 +5,9 @@
     padding-block: 5rem;
     background-color: #2d2f31;
 }
+.footerinline {
+    margin-inline: 1rem;
+}
 .imgSection img{
     max-width: 15rem;
     width: 100%;

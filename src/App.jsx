@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './Components/Navbar/Navbar'
-import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom'
+import { HashRouter, Route, Routes, Navigate } from 'react-router-dom'
 import Home from './Components/Home/Home'
 import LandingPage from './Components/LandingPage/LandingPage'
 import CompanyWebsites from './Components/WebsitesTemplate/WebsitesTemplate'
@@ -16,16 +16,16 @@ import Footer from './Components/Footer/Footer'
 const App = () => {
   return (
     <div>
-      <BrowserRouter>
+      <HashRouter>
       <Navbar />
       <Routes>
-        <Route path="/Qalib/" element={<Home />} />
-        <Route path="/Qalib/LandingPage" element={<LandingPage />} />
-        <Route path="/Qalib/WebsitesTemplate" element={<CompanyWebsites />} />
-        <Route path="/Qalib/PersonalTemplate" element={<PersonalTemplate />} />
-        <Route path="/Qalib/OtherTemplate" element={<OtherTemplate />} />
-        <Route path="/Qalib/Details/:id" element={<Details />} />
-        <Route path="*" element={<Navigate to="/Qalib/" />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/LandingPage" element={<LandingPage />} />
+        <Route path="/WebsitesTemplate" element={<CompanyWebsites />} />
+        <Route path="/PersonalTemplate" element={<PersonalTemplate />} />
+        <Route path="/OtherTemplate" element={<OtherTemplate />} />
+        <Route path="/Details/:id" element={<Details />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <ScrollToTop smooth
     top="300"
@@ -34,7 +34,7 @@ const App = () => {
     width='20'
     style={{borderRadius:"90px", backgroundColor:"#2d2f31", right: "15px"}}
     />
-    </BrowserRouter>
+    </HashRouter>
     <a href="https://wa.me/966506353350" className="whatsapp-float" target="_blank" rel="noopener noreferrer">
         <FaWhatsapp size={40} />
       </a>

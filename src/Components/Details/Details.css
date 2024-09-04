@@ -75,6 +75,10 @@
     font-weight: 500;
     line-height: 2rem;
 }
+.text-icon:hover p {
+    transition-duration: 1s;
+     color: #fff;
+ }
 .text-icon i {
     font-size: 2rem;
 }

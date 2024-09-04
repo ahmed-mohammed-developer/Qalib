@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import AllJson from '../../../public/AllJson.json';
 import { Link } from 'react-router-dom';
 import { MdExpandMore } from "react-icons/md";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+
 
 
 
@@ -59,6 +61,10 @@ const PersonalTemplate = () => {
 
   return (
     <>
+    <HelmetProvider>
+      <Helmet>
+        <title>قالب شخصي</title>
+      </Helmet>
         <div className='main mb-5 mt-3 mt-lg-5 mt-md-5'>
         <div className="container">
           <div className="row"> 
@@ -81,10 +87,10 @@ const PersonalTemplate = () => {
               .map((item, index) => (
       <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 marginBoutton" key={index}>
         <div className="card" style={{ position: 'relative' }}>
-          <Link to={`/Qalib/Details/${item.id}`}>
+          <Link to={`/Details/${item.id}`}>
             <img src={`${item.img}?${index}`} className="card-img-top" alt="" />
           </Link>
-          <Link to={`/Qalib/Details/${item.id}`} className="custom-link">
+          <Link to={`/Details/${item.id}`} className="custom-link">
             <div className="card-body">
               <h5 className="card-title">{item.title}</h5>
               <p className="card-text">{item.description}</p>
@@ -117,6 +123,7 @@ const PersonalTemplate = () => {
 
           </div>
         </div>
+        </HelmetProvider>
     </>
   );
 }

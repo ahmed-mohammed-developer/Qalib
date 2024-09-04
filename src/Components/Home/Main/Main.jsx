@@ -18,7 +18,7 @@ const Main = () => {
         <div className="row">
             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12">
               <div className="card">
-              <Link to={`/Qalib/Details/${item.id}`}>
+              <Link to={`/Details/${item.id}`}>
                 <img src={`${item.img}?${index}`} className="card-img-top" alt="" />
                 </Link>
                 <Link to={`/Qalib/Details/${item.id}`}>
@@ -130,10 +130,10 @@ const filteredItems = data.filter(item =>
     .map((item, index) => (
       <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 marginBoutton" key={index}>
         <div className="card" style={{ position: 'relative' }}>
-          <Link to={`/Qalib/Details/${item.id}`}>
+          <Link to={`/Details/${item.id}`}>
             <img src={`${item.img}?${index}`} className="card-img-top" alt="" />
           </Link>
-          <Link to={`/Qalib/Details/${item.id}`} className="custom-link">
+          <Link to={`/Details/${item.id}`} className="custom-link">
             <div className="card-body">
               <h5 className="card-title">{item.title}</h5>
               <p className="card-text">{item.description}</p>
@@ -162,8 +162,7 @@ const filteredItems = data.filter(item =>
             </span>
             </div>
                 )}
-</div>
-
+            </div>
           </div>
         </div>
     </>

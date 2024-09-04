@@ -116,11 +116,11 @@ const Navbar = () => {
       {open ? (
          <div className="mobil-nav disNon">
          <ul>
-           <li><NavLink to="/Qalib/"className={({ isActive }) => isActive ? 'active-navItem custom-navlink' : 'custom-navlink'}end onClick={handleLinkClick}>الرئسية</NavLink></li>
-           <li><NavLink to="/Qalib/LandingPage"className={({ isActive }) => isActive ? 'active-navItem custom-navlink' : 'custom-navlink'}end onClick={handleLinkClick}>صفحات الهبوط</NavLink></li>
-           <li><NavLink to="/Qalib/WebsitesTemplate" className={({ isActive }) => isActive ? 'active-navItem custom-navlink' : 'custom-navlink'}end onClick={handleLinkClick}>قالب للشركات</NavLink></li>
-           <li><NavLink to="/Qalib/PersonalTemplate" className={({ isActive }) => isActive ? 'active-navItem custom-navlink' : 'custom-navlink'}end onClick={handleLinkClick}>قالب شخصي</NavLink></li>
-           <li><NavLink to="/Qalib/OtherTemplate"className={({ isActive }) => isActive ? 'active-navItem custom-navlink' : 'custom-navlink'}end onClick={handleLinkClick}>أخرى</NavLink></li>
+           <li><NavLink to="/"className={({ isActive }) => isActive ? 'active-navItem custom-navlink' : 'custom-navlink'}end onClick={handleLinkClick}>الرئسية</NavLink></li>
+           <li><NavLink to="/LandingPage"className={({ isActive }) => isActive ? 'active-navItem custom-navlink' : 'custom-navlink'}end onClick={handleLinkClick}>صفحات الهبوط</NavLink></li>
+           <li><NavLink to="/WebsitesTemplate" className={({ isActive }) => isActive ? 'active-navItem custom-navlink' : 'custom-navlink'}end onClick={handleLinkClick}>قالب للشركات</NavLink></li>
+           <li><NavLink to="/PersonalTemplate" className={({ isActive }) => isActive ? 'active-navItem custom-navlink' : 'custom-navlink'}end onClick={handleLinkClick}>قالب شخصي</NavLink></li>
+           <li><NavLink to="/OtherTemplate"className={({ isActive }) => isActive ? 'active-navItem custom-navlink' : 'custom-navlink'}end onClick={handleLinkClick}>أخرى</NavLink></li>
          </ul>
          </div>
      ) : null}
@@ -133,11 +133,11 @@ const Navbar = () => {
     <div className="pages">
       <div className="container">
       <ul>
-      <li><NavLink to="/Qalib" className={({ isActive }) => isActive ? 'active-navItem custom-navlink' : 'custom-navlink'}end>الرئيسية</NavLink></li>
-      <li><NavLink to="/Qalib/LandingPage" className={({ isActive }) => isActive ? 'active-navItem custom-navlink' : 'custom-navlink'} end>صفحات الهبوط</NavLink></li>
-      <li><NavLink to="/Qalib/WebsitesTemplate" className={({ isActive }) => isActive ? 'active-navItem custom-navlink' : 'custom-navlink'} end>قالب للشركات</NavLink></li>
-      <li><NavLink to="/Qalib/PersonalTemplate" className={({ isActive }) => isActive ? 'active-navItem custom-navlink' : 'custom-navlink'} end>قالب  شخصي</NavLink></li>
-      <li><NavLink to="/Qalib/OtherTemplate" className={({ isActive }) => isActive ? 'active-navItem custom-navlink' : 'custom-navlink'} end>أخرى</NavLink></li>
+      <li><NavLink to="/" className={({ isActive }) => isActive ? 'active-navItem custom-navlink' : 'custom-navlink'}end>الرئيسية</NavLink></li>
+      <li><NavLink to="/LandingPage" className={({ isActive }) => isActive ? 'active-navItem custom-navlink' : 'custom-navlink'} end>صفحات الهبوط</NavLink></li>
+      <li><NavLink to="/WebsitesTemplate" className={({ isActive }) => isActive ? 'active-navItem custom-navlink' : 'custom-navlink'} end>قالب للشركات</NavLink></li>
+      <li><NavLink to="/PersonalTemplate" className={({ isActive }) => isActive ? 'active-navItem custom-navlink' : 'custom-navlink'} end>قالب  شخصي</NavLink></li>
+      <li><NavLink to="/OtherTemplate" className={({ isActive }) => isActive ? 'active-navItem custom-navlink' : 'custom-navlink'} end>أخرى</NavLink></li>
       </ul>
       </div>
     

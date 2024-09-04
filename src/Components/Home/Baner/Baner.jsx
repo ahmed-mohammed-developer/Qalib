@@ -1,6 +1,6 @@
 import React from 'react'
 import './Baner.css'
-import BanerJson from '../../../../public/Json/BanerJson.json'
+import AllJson from '../../../../public/AllJson.json'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 const Baner = () => {
-    const data = BanerJson.posts;
+    const data = AllJson.baaner;
     var settings = {
         dots: true,
         infinite: true,

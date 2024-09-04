@@ -12,20 +12,20 @@ const Footer = () => {
     <div className='footer'>
       <div className="main-footer ">
         <div className="container">
-            <div className="row mb-5 baner">
+            <div className="row mb-5 footerinline">
                 <div className="col-lg-3 col-md-6 col-sm-6 imgSection marginBottom">
-                <a href="/Qalib/">
+                <a href="/">
                 <img src={footerEdit} alt="logo Image" />
                 </a>
                 </div>
                 <div className="col-lg-3 col-md-6 col-sm-6">
                     <div className="deatelsSection">
                         <h3>قالب</h3>
-                        <a href=""><p>جميع القوالب</p></a>
-                        <a href="/Qalib/LandingPage" target="_blank"><p>صفحة هبوط</p></a>
-                        <a href="/Qalib/PersonalTemplate" target="_blank"><p>قالب شخصي</p></a>
-                        <a href="/Qalib/WebsitesTemplate" target="_blank"><p>قالب شركة</p></a>
-                        <a href="/Qalib/OtherTemplate" target="_blank"><p className='marginBottom'>أخرى</p></a>
+                        <a href="#/" target="_blank"><p>جميع القوالب</p></a>
+                        <a href="#/LandingPage" target="_blank"><p>صفحة هبوط</p></a>
+                        <a href="#/PersonalTemplate" target="_blank"><p>قالب شخصي</p></a>
+                        <a href="#/WebsitesTemplate" target="_blank"><p>قالب شركة</p></a>
+                        <a href="#/OtherTemplate" target="_blank"><p className='marginBottom'>أخرى</p></a>
                     </div>
                 </div>
                 <div className="col-lg-3 col-md-6 col-sm-6 mb-5">
